@@ -1,0 +1,126 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/calendar.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar"/>
+        <div class="user-main user-info">
+            <div class="user-info-section user-data">
+                <h3 class="title">个人资料</h3>
+                <p class="desc">在这里填写您的个人资料，请详细填写下面每一个栏目<span class="red-font">(带*的为必填项)</span></p>
+                <div class="main flex flex-start align-start">
+                    <form class="user-data-form">
+                        <div class="inline-form flex-start flex align-center">
+                            <label>姓名：</label>
+                            <input type="text" class="user-data-form-item profile-name" maxlength="20"/>
+                        </div>
+                        <div class="inline-form flex-start flex align-center">
+                            <label>性别：</label>
+                            <label class="radio">
+                                <input type="radio" name="sexual" id="man" class="profile-sex" value="0" checked/>
+                                <span class="nisen-radio"></span>
+                                <span>男</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="sexual" id="woman" class="profile-sex" value="1"/>
+                                <span class="nisen-radio"></span>
+                                <span>女</span>
+                            </label>
+                        </div>
+                        <div class="inline-form flex-start flex align-center">
+                            <label>*手机号码：</label>
+                            <div class="flex flex-start align-center">
+                                <span class="user-data-phone"></span>
+                                <span class="red-font">已验证</span>
+                                <span class="line"></span>
+                                <a href="javascript:void(0)" class="gold-font show-edit-phone-modal">修改</a>
+                            </div>
+                        </div>
+                        <div class="inline-form flex-start flex align-center">
+                            <label>生日：</label>
+                            <div class="relative-box">
+                                <input type="text" class="user-data-form-item profile-birthday" id="singleDateRange">
+                            </div>
+                        </div>
+                        <button type="button" class="save-user-data">保存</button>
+                    </form>
+                    <div class="avatar-box">
+                        <div class="avatar-wrapper">
+                            <img src="__IMG__/avatar.png"/>
+                        </div>
+                        <div class="avatar-operations clear">
+                            <input type="file" id="avatarUploader"/>
+                            <label for="avatarUploader" class="avatar-action">本地上传</label>
+                            <a class="avatar-action">拍照上传</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info-section user-size">
+                <h4 class="title">个人尺码</h4>
+                <p class="desc">在这里填写您的个人尺码信息，完善个人尺码信息可用于服装订制</p>
+                <form class="user-size-form clear">
+                    <div class="inline-form flex-start flex align-center">
+                        <label>身高</label>
+                        <input type="number" class="user-size-form-item height"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>臀围</label>
+                        <input type="number" class="user-size-form-item hipline"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>肩宽</label>
+                        <input type="number" class="user-size-form-item shoulder"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>横档</label>
+                        <input type="number" class="user-size-form-item rung"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>衣长</label>
+                        <input type="number" class="user-size-form-item clothesLength"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>立档</label>
+                        <input type="number" class="user-size-form-item filing"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>袖长</label>
+                        <input type="number" class="user-size-form-item sleeveLength"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>裤长</label>
+                        <input type="number" class="user-size-form-item pantsLength"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>胸围</label>
+                        <input type="number" class="user-size-form-item chest"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>脚宽</label>
+                        <input type="number" class="user-size-form-item footBreadth"/>
+                    </div>
+                    <div class="inline-form flex-start flex align-center">
+                        <label>腰围</label>
+                        <input type="number" class="user-size-form-item waistline"/>
+                    </div>
+                </form>
+                <button type="button" class="save-user-size">保存</button>
+            </div>
+        </div>
+    </div>
+    <include file="Modal:editPhone"/>
+</block>
+<block name="js">
+    <script src="__JS__/moment.min.js"></script>
+    <script src="__JS__/jq-datepicker.js"></script>
+    <script src="__JS__/userInfo.js"></script>
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+    </script>
+    <script src="__JS__/info.js"></script>
+</block>

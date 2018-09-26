@@ -1,0 +1,203 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+.modal .main{
+    position: absolute;
+    padding: 26px 40px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+.modal .header{
+    position: relative;
+    padding-bottom: 22px;
+}
+.modal .header>h4{font-size: 18px;}
+.modal .header .close-modal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../images/close.png') no-repeat center center;
+    background-size: contain;
+}
+#cancelOrderModal .main{width: 500px;height: 400px;}
+#cancelOrderModal .content{margin-top: 18px;}
+#cancelOrderModal .header{border-bottom: 1px solid #ddd}
+#cancelOrderModal .header h4{text-align: center;font-size: 18px;color:#1a191e;font-weight: bold; }
+#cancelOrderModal .content p{margin-bottom: 20px}
+#cancelOrderModal .content .cancel-tit{margin-bottom:12px;}
+#cancelOrderModal .content .cancel-reason{margin-bottom: 26px}
+#cancelOrderModal .content #c_reason div{text-align: left;margin-bottom: 20px;}
+#cancelOrderModal .content #c_reason div .reason_text{position: relative;top:-2px;}
+#cancelOrderModal .content label{margin-bottom: 20px;margin-right: 5px;}
+#cancelOrderModal .submit-cancel-order{
+    width: 200px;
+    height: 40px;
+    border: #c5ad82 1px solid;
+    border-radius: 3px;
+    background-color: #c5ad82;
+    color: white;
+    font-size: 16px;
+    cursor:pointer;
+}
+#cancelafterOrderModal .main{width: 500px;height: 200px;}
+#cancelafterOrderModal .content h2, #delOrderModal .content h2{  font-size: 26px;  }
+#cancelafterOrderModal .content h2, #delOrderModal .content h2{text-align: center}
+#cancelafterOrderModal .content .operations{margin-top: 30px;position: relative;}
+#cancelafterOrderModal .content .operations .close-modal{position: absolute;left:59px;}
+#cancelafterOrderModal .content .operations .submit-confirm-receive{position: absolute;right:71px;}
+#cancelafterOrderModal .main{width: 500px;height: 200px;}
+#cancelafterOrderModal .operations button, #delOrderModal .operations button{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#cancelafterOrderModal .operations .close-modal,#delOrderModal .operations .close-modal{
+    border: 1px solid #ddd;
+    color: #a5a5a5;
+}
+#cancelafterOrderModal .operations .submit-confirm-receive, #delOrderModal .operations .submit-del-order{
+    border: 1px solid #c5ad82;
+    background-color: #c5ad82;
+    color: white;
+}
+
+
+#confirmReceiveModal .main{width: 500px;height: 200px;}
+#confirmReceiveModal .content h2, #delOrderModal .content h2{  font-size: 26px;  }
+#confirmReceiveModal .content h2, #delOrderModal .content h2{text-align: center}
+#confirmReceiveModal .content .operations,#delOrderModal .content .operations{margin-top: 30px;position: relative;}
+#confirmReceiveModal .content .operations .close-modal{position: absolute;left:59px;}
+#confirmReceiveModal .content .operations .submit-confirm-receive{position: absolute;right:71px;}
+#confirmReceiveModal .main{width: 500px;height: 200px;}
+#delOrderModal .main{width: 500px;height: 200px;}
+#delOrderModal .content .operations .close-modal{position: absolute;left:59px;}
+#delOrderModal .content .operations .submit-del-order{position: absolute;right:71px;}
+#confirmReceiveModal .operations button, #delOrderModal .operations button{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#confirmReceiveModal .operations .close-modal, #delOrderModal .operations .close-modal{
+    border: 1px solid #ddd;
+    color: #a5a5a5;
+}
+#confirmReceiveModal .operations .submit-confirm-receive, #delOrderModal .operations .submit-del-order{
+    border: 1px solid #c5ad82;
+    background-color: #c5ad82;
+    color: white;
+}
+
+#editPhoneModal .inline-form {
+    margin-left: 42px;
+    margin-bottom: 18px;
+    margin-right: 54px;
+}
+#editPhoneModal .inline-form label{
+    display: block;
+    width: 82px;
+    font-size: 18px;
+}
+#editPhoneModal .inline-form input{
+    height: 40px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    padding-left: 18px;
+}
+#editPhoneModal .inline-form #editPhone{width: 260px;}
+#editPhoneModal .inline-form #editPhoneCode{width: 120px;}
+#editPhoneModal .inline-form .send-edit-phone-code{
+    margin-left: 20px;
+    width: 122px;
+    height: 40px;
+    border: 1px solid #c5ad82;
+    background-color: #c5ad82;
+    color: white;
+    font-size: 18px;
+}
+#editPhoneModal .operations{
+    width: auto;
+    margin-left: 70px;
+    margin-top: 42px;
+}
+#editPhoneModal .operations button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+#editPhoneModal .operations .close-modal{
+    border: 1px solid #808080;
+    color: #808080;
+    background: none;
+}
+#editPhoneModal .operations .submit-edit-phone{
+    border: 1px solid #c5ad82;;
+    color: white;
+    background-color: #c5ad82;
+    margin-left: 20px;
+}
+
+#delCouponModal .content h2{  font-size: 26px;  text-align: center}
+#delCouponModal .content{padding: 0 78px; }
+#delCouponModal .operations{text-align: center; margin-top: 40px;}
+#delCouponModal .operations button{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#delCouponModal .operations .close-modal{
+    border: 1px solid #ddd;
+    color: #a5a5a5;
+    background: none;
+}
+#delCouponModal .operations .submit-del-coupon{
+    border: 1px solid #c5ad82;
+    background-color: #c5ad82;
+    color: white;
+    margin-left: 48px;
+}
+
+#paySuccessModal i.false{
+    display: block;
+    margin: 0 156px 34px;
+    width: 122px;
+    height: 122px;
+    background: url('../images/success.png') no-repeat center center;
+    background-size: contain;
+}
+#paySuccessModal .content h4{
+    text-align: center;
+    font-size: 24px;
+}
+
+#pwdCheckModal .content h2{  font-size: 26px;}
+#pwdCheckModal .content{padding: 0 78px; }
+#pwdCheckModal .operations{text-align: center; margin-top: 40px;}
+#pwdCheckModal .operations button{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: #c5ad82;
+    border: 1px solid #c5ad82;
+    color: white;
+}

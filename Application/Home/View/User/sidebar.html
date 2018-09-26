@@ -1,0 +1,31 @@
+<nav class="user-sidebar">
+  <div class="module">
+    <h3 class="dark-font">订单中心</h3>
+    <a href="{:U('User/orderList')}">我的订单</a>
+  </div>
+  <div class="module">
+    <h3 class="dark-font">个人中心</h3>
+    <a href="{:U('User/info')}">个人资料</a>
+    <a href="{:U('User/address')}">收货地址</a>
+    <a href="{:U('User/point')}">我的积分</a>
+    <a href="{:U('User/coupon')}">我的优惠券</a>
+    <a href="{:U('User/message')}">我的消息</a>
+    <a href="{:U('User/wallet')}">我的钱包</a>
+    <a href="{:U('User/collect')}">我的收藏</a>
+    <a href="{:U('User/join')}">我要加盟</a>
+    <a id="my_store_share" href="{:U('User/store')}?uid=">我的店铺</a>
+    <a href="{:U('User/pwd')}">修改密码</a>
+    <a href="{:U('Help/index')}">帮助中心</a>
+  </div>
+</nav>
+<block name="js">
+  <script>
+   userid = ykp.getLocalStorage("id");
+   isShop = ykp.getLocalStorage("isShop");
+
+   isShop == 1 ? $('#my_store_share').show() : $('#my_store_share').hide();
+   var stor="{:U('User/store')}";
+   var hrefm= ''+ stor +'?uid='+ userid +'';
+   $('#my_store_share').attr('href',hrefm);
+  </script>
+</block>

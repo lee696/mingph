@@ -1,0 +1,42 @@
+<nav class="navigator">
+    <div class="sub-nav">
+        <div id="logCheck-tit" class="main-width text-right">
+        </div>
+    </div>
+    <div class="main-nav main-width margin-top">
+        <div class="clear center-nav">
+            <a style="float:left;display: inline-block" href="{:U('Index/index')}" class="logo"><img style="width: 238px" src="__IMG__/newlogo.png" alt="名品汇" /></a>
+            <form class="search-form flex flex-start align-center">
+                <input type="text" id="searchKeywords" placeholder="输入商品名" />
+                <button type="button" id="searchBtn"></button>
+            </form>
+            <a style="display: inline-block" href="{:U('Order/cart')}" class="cart-entrance ">
+                <i class="icon icon-cart"></i>
+                我的购物车(<span class="red-font cart-num">0</span>)
+            </a>
+        </div>
+        <div class="menu flex flex-start align-center">
+            <span><a href="{:U('Index/index')}" class="index">首页</a></span>
+            <span class="has-expand">
+                <a class="dress">服饰商城</a>
+                <div class="menu-expand-list direction-col">
+                    <div>
+                        <a href="{:U('Goods/list')}?position=1">男人帮</a>
+                        <a href="{:U('Goods/list')}?position=2">女人帮</a>
+                    </div>
+                </div>
+            </span>
+            <span class="has-expand">
+                <a class="jewelBox">百宝箱</a>
+                <div class="menu-expand-list flex-wrap" id="treasureBoxList">
+                    <div class="clear">
+                        
+                    </div>
+                </div>
+            </span>
+            <span class="has-expand">
+                <a href="{:U('Goods/pointList')}" class="integralMall">积分商城</a>
+            </span>
+        </div>
+    </div>
+</nav>

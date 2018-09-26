@@ -1,0 +1,121 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar"/>
+    <nav class="breadCrumb">
+        <div class="main-width">
+            <a href="{:U('Index/index')}">首页</a>
+            <span>></span>
+            <a href="{:U('Goods/pointList')}">积分商城</a>
+            <span>></span>
+            <span>商品详情</span>
+        </div>
+    </nav>
+    <div class="main-width">
+        <div class="clear goods-detail">
+            <div class="goods-images">
+                <div id="fullImage">
+                    <span class="jqzoom">
+                    <img jqimg="" src=""/>
+                    </span>
+                </div>
+                <div class="display-box clear">
+                    <a id="prev_bt" class="display-op prev disabled" href="javascript:void(0)"></a>
+                    <div id="lunbo-box" class="flow-box relative-box">
+                        <div id="goodsThumbImages" class="flex">
+
+                        </div>
+                    </div>
+                    <a id="nex_bt" class="display-op next" href="javascript:void(0)"></a>
+                </div>
+            </div>
+            <div class="goods-param">
+                <div class="goods-specs">
+                    <div  class="title">
+                        <h1 class="dark-font goods-name"></h1>
+                        <p class="gray-font goods-code">
+                            <span id="custmerclick" class="consult"><i></i>咨询客服</span>
+                        </p>
+                    </div>
+                    <div class="goods-price">
+                        <p>市场价：<span class="line-through originalPrice"></span></p>
+                        <p>现价：<span class="red-font bold-font prevailingPrice"></span></p>
+                        <p class="goods-states"></p>
+                    </div>
+                    <div style="margin-top: 30px;" class="goods-params">
+                        <dl class="goods-params-item clear">
+                            <dt>颜色：</dt>
+                            <dd class="flex color">
+                            </dd>
+                        </dl>
+                        <dl class="goods-params-item clear">
+                            <dt>款式：</dt>
+                            <dd class="flex style">
+                            </dd>
+                        </dl>
+                        <dl class="goods-params-item clear">
+                            <dt>尺码：</dt>
+                            <dd class="flex size">
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="amount flex">
+                    <span class="gray-font">数量：</span>
+                    <div class="amount-group flex">
+                        <a class="amount-op minus" href="javascript:void(0)">-</a>
+                        <input type="number" class="amount-num" value="1"/>
+                        <a class="amount-op plus" href="javascript:void(0)">+</a>
+                    </div>
+                </div>
+                <div class="goods-op flex">
+                    <button type="button" class="to-exchange goods-action dark-font">立即兑换</button>
+                    <button type="button" id="scollection" class="add-collection goods-action dark-font"><i></i>收藏备选</button>
+                </div>
+            </div>
+        </div>
+        <div class="goods-detail-extra clear">
+            <div class="recommend-goods goods-ad-list">
+                <h1>精品推荐</h1>
+            </div>
+            <div class="goods-doc">
+                <ul id="goods_doc_Box" class="goods-doc-filter clear">
+                    <li class="act">商品详情</li>
+                    <li>规格参数</li>
+                    <li>用户评价<span class="commentNum"></span></li>
+                </ul>
+                <div id="goods_doc_cont">
+                    <div id="goods_detail_inf" class="goods-doc-content">
+
+                    </div>
+                    <div id="goods_inf" class="goods-doc-content hidden">
+
+                    </div>
+                    <div id="goods_comment_inf" class="goods-doc-content hidden">
+                        <div class="commentBox"></div>
+                        <div class="paging clear">
+                            <div id="pageBar" class="pagination">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="big_pic" class="hidden" style="position:fixed;top: 0;left: 0;width:100%;height:100%;z-index:999;background:rgba(0, 0, 0, .5) " >
+            <div style="margin: 10% auto;width: 60%;"><img style="width: inherit" src="" alt=""></div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var defaultImg='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/slide/jquery.jqzoom.js"></script>
+    <script src="__JS__/slide/lanrenzhijia.js"></script>
+    <script src="__JS__/goods.js?__T__"></script>
+    <script src="__JS__/goods_integralDetail.js?__T__"></script>
+    <script src="__JS__/slide/jquery.jqzoom.js"></script>
+    <script src="__JS__/slide/lanrenzhijia.js"></script>
+</block>

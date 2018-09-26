@@ -1,0 +1,30 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/banner.css?"/>
+</block>
+<block name="main">
+    <div id="imgBox">
+        <ul id="bottomBox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="recommend-goods main-width">
+        <h4 class="women-tit">精品女装</h4>
+        <div class="women-goods-list">
+        </div>
+        <p class="women-more clear"><a href="{:U('Goods/list')}?position=2">更多</a></p>
+        <h4 class="man-tit">精品男装 </h4>
+        <div class="man-goods-list">
+        </div>
+        <p class="nam-more clear"><a href="{:U('Goods/list')}?position=1">更多</a></p>
+    </div>
+    <div id="output"></div>
+</block>
+<block name="js">
+    <script src="__JS__/banner.js?__T__"></script>
+    <script src="__JS__/goods.js?__T__"></script>
+    <script src="__JS__/homePage.js?__T__"></script>
+</block>

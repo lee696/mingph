@@ -1,0 +1,71 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/cart.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar" />
+    <include file="Modal:delOrder"/>
+    <nav class="breadCrumb">
+        <div class="main-width">
+            <a href="{:U('Index/index')}">首页</a>
+            <span>></span>
+            <span>购物车</span>
+        </div>
+    </nav>
+    <div class="main-width cart">
+        <h3 class="cart-hint red-font">您已选购以下商品!</h3>
+        <div class="cart-operation-bar">
+            <div class="cols col-1" id="checkAll">
+                <label class="checkbox">
+                    <input type="checkbox"  />
+                    <span class="nisen-box"></span>
+                    <span>全选</span>
+                </label>
+            </div>
+            <div class="cols col-2">
+
+            </div>
+            <div class="col-3 cols" id="property">
+                属性
+            </div>
+            <div class="col-4 cols">
+                单价
+            </div>
+            <div class="col-5 cols">
+                <p style="padding-left:36px;">数量</p>
+            </div>
+            <div class="col-6 cols">
+                小计
+            </div>
+            <div class="col-7 cols">
+                操作
+            </div>
+        </div>
+
+        <div id="cartBox">
+
+        </div>
+        <p class="red-font cart-total">
+            <span class="small-font">购物金额小计：</span>
+            ￥<span class="purchase-price">0</span>
+        </p>
+        <div class="cart-lead">
+            <a href="{:U('Index/index')}">继续购物</a>
+            <a href="{:U('Order/doOrder')}" class="purchase-entrance">结算</a>
+        </div>
+        <div class="recommend-goods cr_recommend_gs_items goods-ad-list">
+            <h1>精品推荐</h1>
+            <div id="recommendItems" class="clear goods-list-box" >
+
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="js">
+    <script>
+        var defaultImg='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/cart.js?__T__"></script>
+</block>

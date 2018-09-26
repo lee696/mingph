@@ -1,0 +1,95 @@
+.wx-pay-title{
+    background-color: #fefaf4;
+}
+.wx-pay-title .main-width{
+    padding: 18px 0;
+}
+.wx-pay-title h3{
+    margin-bottom: 14px;
+    font-size: 24px;
+    color: #1a191e;
+    font-weight: 600;
+    font-family: MicrosoftYaHei;
+}
+.wx-pay-title .main-width p{font-size: 16px;font-weight: 600;}
+.wx-pay-title .main-width p a{margin-left:10px;font-weight: 600;color: #277ecd;}
+.wx-qr-box{
+    width: 1134px;
+    margin: 30px auto;
+    border: 2px solid #ddd;
+}
+.wx-qr-box>h4{
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wx-qr-box .main{
+    background-color: #f8f8f8;
+    padding: 40px;
+    width: 100%
+}
+.wx-qr-box .order-info{
+    width: 55%;
+    padding: 95px 40px 60px;
+    background-color: #eeeeee;
+}
+.wx-qr-box .order-info>p{font-size: 16px;margin-bottom: 31px;}
+.wx-qr-box .order-info>p .itemTit{font-size: 20px;color: #666;}
+.wx-qr-box .order-info>p .itemCont{font-size: 20px;color: #000;}
+.wx-qr-box .code-box{
+    padding-top: 35px;
+    width: 45%;
+    height: 313px;
+    background-color: white;
+}
+.wx-qr-box .qr-code{
+    width: 230px;
+    height: 230px;
+    border: 1px solid #ddd;
+}
+.wx-qr-box .qr-code>img{
+    width: 176px;
+    height: 176px;
+}
+.wx-qr-box .code-box>p{
+    margin-top: 14px;
+    font-size: 16px;
+    color: #666;
+}
+.wx-qr-box .code-box .walletPayTit{font-size: 20px;color: #000;font-weight: 600;}
+.wx-qr-box .code-box .walletDs{font-size: 16px;color: #666;margin-top:20px;margin-bottom: 28px; }
+.wx-qr-box .code-box .forgetPaypwd{padding: 20px 48px 30px;}
+.wx-qr-box .code-box .forgetPaypwd a{font-size: 16px;color: #c5ad82;float: right;}
+.wx-qr-box .code-box .walletPaybox input{width: 60px;font-size:18px;border:none;background: #f4f4f4;height: 40px;padding: 0;text-align: center;}
+.wx-qr-box .code-box button{width: 260px;height: 49.9px;font-size:18px;color:#fff;background: #c5ad82;outline: none;border: none;}
+.finish-wx-pay{
+    float: right;
+    margin-right: 30px;
+    line-height: 4;
+    font-size: 20px;
+    color: #c5ad82;
+}
+.pay-success{
+    background-color: #fefaf4;
+    text-align: center;
+    padding: 100px 0 300px;
+}
+.pay-success .title{
+    margin-bottom: 70px;
+}
+.pay-success .success-icon{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url('../images/pay-success.png') no-repeat center center;
+    background-size: contain;
+    margin-right: 20px;
+}
+.pay-success .gold-font{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.pay-success .gold-font + .gold-font{
+    margin-left: 30px;
+}
+.foot{margin-top: 0 !important;}

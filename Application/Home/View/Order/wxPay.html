@@ -1,0 +1,46 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/pay.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="wx-pay-title">
+        <div class="main-width">
+            <h3>支付确认</h3>
+            <p>请在24小时内使用以下方式完成付款，如有疑问，欢迎您随时<a class="blue-font">联系我们</a></p>
+        </div>
+    </div>
+    <div class="main-width">
+        <div class="wx-qr-box clear">
+            <h4>微信支付</h4>
+            <div class="flex main justify-center align-center">
+               <!-- <div class="flex order-info direction-col space-between align-start">
+                    <p>
+                        <span class="itemTit">收款方：</span>
+                        <span class="itemCont">名品汇商城</span>
+                    </p>
+                    <p>
+                        <span class="itemTit">订单编号：</span>
+                        <span class="itemCont">1234567890</span>
+                    </p>
+                    <p>
+                        <span class="itemTit">应付金额：</span>
+                        <span class="red-font itemCont">￥600</span>
+                    </p>
+                </div>-->
+                <div class="code-box flex direction-col justify-center align-center">
+                    <div id="wechatQrbox" class="qr-code flex justify-center align-center">
+                      <!--  <img src="__IMG__/test/code.png" />-->
+                    </div>
+                    <p>使用微信【扫一扫】上方二维码进行支付</p>
+                </div>
+            </div>
+            <a class="finish-wx-pay bold-font gold-font" id="scomplete">完成支付</a>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var PySuccess = "{:U('Order/paySuccess')}";
+    </script>
+    <script src="__JS__/weChatPay.js?__T__"></script>
+</block>

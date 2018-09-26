@@ -1,0 +1,47 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar" />
+        <div class="user-main">
+            <div class="user-coupon">
+                <h3 class="title dark-font">我的优惠券</h3>
+                <table class="user-coupon-table">
+                    <tr>
+                        <th>名称</th>
+                        <th>券码</th>
+                        <th>有效期</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    <tbody id="coupon-cont" class="user-coupon-render">
+
+                    </tbody>
+                </table>
+                <div class="operations clear">
+                    <button type="button" class="user-wallet-records-action nextPage">下一页</button>
+                    <button type="button" class="user-wallet-records-action prePage">上一页</button>
+
+                </div>
+            </div>
+            <div class="recommend-goods recommend_gs_items goods-ad-list">
+                <h1>精品推荐</h1>
+                <div id="recommend-goods" class="goods-list-box"></div>
+            </div>
+        </div>
+        <!--<include file="Modal:delCoupon" />-->
+    </div>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+        var shop_details = "{:U('Goods/detail')}";
+        var defaultpic ='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/coupon.js?__T__"></script>
+</block>

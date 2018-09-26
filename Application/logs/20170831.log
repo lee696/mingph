@@ -1,0 +1,2212 @@
+2017-08-31 10:58:52=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => false,
+    'error' => 'Operation timed out after 300000 milliseconds with 0 bytes received',
+    'code' => 0,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => NULL,
+      'http_code' => 0,
+      'header_size' => 0,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 300,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 31,
+      'size_download' => 0,
+      'speed_download' => 0,
+      'speed_upload' => 0,
+      'download_content_length' => -1,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 0,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 61586,
+    ),
+  ),
+)
+2017-08-31 16:13:02=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'goodId' => '829',
+    'userId' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.HomeServiceImpl.goodDetail(HomeServiceImpl.java:176)
+	sun.reflect.GeneratedMethodAccessor1680.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy414.goodDetail(Unknown Source)
+	com.mph.controller.HomeController.goodDetail(HomeController.java:78)
+	sun.reflect.GeneratedMethodAccessor1679.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/goodDetail?goodId=829&userId=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 516,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.078,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 20,
+      'size_download' => 6051,
+      'speed_download' => 77576,
+      'speed_upload' => 256,
+      'download_content_length' => 6051,
+      'upload_content_length' => 20,
+      'starttransfer_time' => 0.078,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 65016,
+    ),
+  ),
+)
+2017-08-31 17:22:51=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '75',
+    'brand' => '1',
+    'isCollection' => '0',
+    'price' => '12',
+    'color' => '黄',
+    'style' => '17年夏季新款',
+    'size' => 'L',
+    'goodsCount' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 648,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.014999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 162,
+      'size_download' => 6080,
+      'speed_download' => 405333,
+      'speed_upload' => 10800,
+      'download_content_length' => 6080,
+      'upload_content_length' => 162,
+      'starttransfer_time' => 0.014999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 56293,
+    ),
+  ),
+)
+2017-08-31 17:22:53=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '75',
+    'brand' => '1',
+    'isCollection' => '0',
+    'price' => '12',
+    'color' => '黄',
+    'style' => '17年夏季新款',
+    'size' => 'L',
+    'goodsCount' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 648,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.094,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 162,
+      'size_download' => 6080,
+      'speed_download' => 64680,
+      'speed_upload' => 1723,
+      'download_content_length' => 6080,
+      'upload_content_length' => 162,
+      'starttransfer_time' => 0.094,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 56297,
+    ),
+  ),
+)
+2017-08-31 17:22:55=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '75',
+    'brand' => '1',
+    'isCollection' => '0',
+    'price' => '12',
+    'color' => '黄',
+    'style' => '17年夏季新款',
+    'size' => 'L',
+    'goodsCount' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 648,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 162,
+      'size_download' => 6080,
+      'speed_download' => 380000,
+      'speed_upload' => 10125,
+      'download_content_length' => 6080,
+      'upload_content_length' => 162,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 56302,
+    ),
+  ),
+)
+2017-08-31 17:23:01=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '75',
+    'brand' => '1',
+    'isCollection' => '0',
+    'price' => '12',
+    'color' => '黄',
+    'style' => '17年夏季新款',
+    'size' => 'L',
+    'goodsCount' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 648,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 162,
+      'size_download' => 6080,
+      'speed_download' => 380000,
+      'speed_upload' => 10125,
+      'download_content_length' => 6080,
+      'upload_content_length' => 162,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 56314,
+    ),
+  ),
+)
+2017-08-31 17:23:41=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '75',
+    'brand' => '1',
+    'isCollection' => '0',
+    'price' => '12',
+    'color' => '黄',
+    'style' => '17年夏季新款',
+    'size' => 'L',
+    'goodsCount' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 648,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0.014999999999999999,
+      'pretransfer_time' => 0.014999999999999999,
+      'size_upload' => 162,
+      'size_download' => 6080,
+      'speed_download' => 196129,
+      'speed_upload' => 5225,
+      'download_content_length' => 6080,
+      'upload_content_length' => 162,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 56384,
+    ),
+  ),
+)
+2017-08-31 17:30:02=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '59',
+    'brand' => '1',
+    'pic' => 'https://a.vpimg3.com/upload/merchandise/pdcvis/2017/03/30/109/89603c9a-96f7-4f09-8a09-ecf1cd58e1fb.jpg',
+    'isCollection' => '1',
+    'price' => '3245',
+    'color' => '蓝',
+    'style' => '16年新款',
+    'size' => 'M',
+    'goodsCount' => '1',
+    'isPrivate' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 775,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.032000000000000001,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 289,
+      'size_download' => 6080,
+      'speed_download' => 190000,
+      'speed_upload' => 9031,
+      'download_content_length' => 6080,
+      'upload_content_length' => 289,
+      'starttransfer_time' => 0.032000000000000001,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 57100,
+    ),
+  ),
+)
+2017-08-31 17:30:14=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '59',
+    'brand' => '1',
+    'pic' => 'https://a.vpimg3.com/upload/merchandise/pdcvis/2017/03/30/109/89603c9a-96f7-4f09-8a09-ecf1cd58e1fb.jpg',
+    'isCollection' => '1',
+    'price' => '3245',
+    'color' => '红',
+    'style' => '16年新款',
+    'size' => 'M',
+    'goodsCount' => '1',
+    'isPrivate' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 775,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.032000000000000001,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 289,
+      'size_download' => 6080,
+      'speed_download' => 190000,
+      'speed_upload' => 9031,
+      'download_content_length' => 6080,
+      'upload_content_length' => 289,
+      'starttransfer_time' => 0.032000000000000001,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 57124,
+    ),
+  ),
+)
+2017-08-31 17:30:30=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '59',
+    'brand' => '1',
+    'pic' => 'https://a.vpimg3.com/upload/merchandise/pdcvis/2017/03/30/109/89603c9a-96f7-4f09-8a09-ecf1cd58e1fb.jpg',
+    'isCollection' => '1',
+    'price' => '3245',
+    'color' => '蓝',
+    'style' => '16年新款',
+    'size' => 'M',
+    'goodsCount' => '1',
+    'isPrivate' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 775,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.68799999999999994,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 289,
+      'size_download' => 6080,
+      'speed_download' => 8837,
+      'speed_upload' => 420,
+      'download_content_length' => 6080,
+      'upload_content_length' => 289,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 57212,
+    ),
+  ),
+)
+2017-08-31 17:31:17=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '59',
+    'brand' => '1',
+    'pic' => 'https://a.vpimg3.com/upload/merchandise/pdcvis/2017/03/30/109/89603c9a-96f7-4f09-8a09-ecf1cd58e1fb.jpg',
+    'isCollection' => '1',
+    'price' => '3245',
+    'color' => '蓝',
+    'style' => '16年新款',
+    'size' => 'M',
+    'goodsCount' => '1',
+    'isPrivate' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 775,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 289,
+      'size_download' => 6080,
+      'speed_download' => 380000,
+      'speed_upload' => 18062,
+      'download_content_length' => 6080,
+      'upload_content_length' => 289,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 57295,
+    ),
+  ),
+)
+2017-08-31 17:33:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '69',
+    'goodsId' => '59',
+    'brand' => '1',
+    'pic' => 'https://a.vpimg3.com/upload/merchandise/pdcvis/2017/03/30/109/89603c9a-96f7-4f09-8a09-ecf1cd58e1fb.jpg',
+    'isCollection' => '1',
+    'price' => '3245',
+    'color' => '蓝',
+    'style' => '16年新款',
+    'size' => 'M',
+    'goodsCount' => '1',
+    'isPrivate' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.CommonServiceImpl.immediatelyToPay(CommonServiceImpl.java:372)
+	sun.reflect.GeneratedMethodAccessor2641.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy428.immediatelyToPay(Unknown Source)
+	com.mph.controller.CommonController.immediatelyToPay(CommonController.java:158)
+	sun.reflect.GeneratedMethodAccessor2640.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/common/immediatelyToPay?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 775,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.047,
+      'namelookup_time' => 0,
+      'connect_time' => 0.032000000000000001,
+      'pretransfer_time' => 0.032000000000000001,
+      'size_upload' => 289,
+      'size_download' => 6080,
+      'speed_download' => 129361,
+      'speed_upload' => 6148,
+      'download_content_length' => 6080,
+      'upload_content_length' => 289,
+      'starttransfer_time' => 0.047,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 57493,
+    ),
+  ),
+)
+2017-08-31 18:16:53=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.094,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 64521,
+      'speed_upload' => 595,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.094,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62588,
+    ),
+  ),
+)
+2017-08-31 18:16:53=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?uid=69&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 506,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.045999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0.031,
+      'pretransfer_time' => 0.031,
+      'size_upload' => 13,
+      'size_download' => 6065,
+      'speed_download' => 131847,
+      'speed_upload' => 282,
+      'download_content_length' => 6065,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.045999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62589,
+    ),
+  ),
+)
+2017-08-31 18:16:56=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 195645,
+      'speed_upload' => 1806,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62608,
+    ),
+  ),
+)
+2017-08-31 18:16:56=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?uid=69&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 506,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 13,
+      'size_download' => 6065,
+      'speed_download' => 195645,
+      'speed_upload' => 419,
+      'download_content_length' => 6065,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62609,
+    ),
+  ),
+)
+2017-08-31 18:17:02=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=1',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.047,
+      'namelookup_time' => 0,
+      'connect_time' => 0.031,
+      'pretransfer_time' => 0.031,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 129042,
+      'speed_upload' => 1191,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.047,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62626,
+    ),
+  ),
+)
+2017-08-31 18:17:05=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '1',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=1',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.032000000000000001,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 189531,
+      'speed_upload' => 1750,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.032000000000000001,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62634,
+    ),
+  ),
+)
+2017-08-31 18:17:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.014999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 404333,
+      'speed_upload' => 3733,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.014999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62640,
+    ),
+  ),
+)
+2017-08-31 18:17:13=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+    'uid' => '69',
+    'pageSize' => '6',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?rows=20&pageNo=1&filter=&order=&uid=69&pageSize=6&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 592,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.062,
+      'namelookup_time' => 0,
+      'connect_time' => 0.014999999999999999,
+      'pretransfer_time' => 0.014999999999999999,
+      'size_upload' => 56,
+      'size_download' => 6065,
+      'speed_download' => 97822,
+      'speed_upload' => 903,
+      'download_content_length' => 6065,
+      'upload_content_length' => 56,
+      'starttransfer_time' => 0.062,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62659,
+    ),
+  ),
+)
+2017-08-31 18:17:13=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+    'type' => '0',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.service.impl.OrderServiceImpl.getUserOrders(OrderServiceImpl.java:611)
+	sun.reflect.GeneratedMethodAccessor3461.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	com.sun.proxy.$Proxy1168.getUserOrders(Unknown Source)
+	com.mph.controller.OrderController.getOrderList(OrderController.java:418)
+	sun.reflect.GeneratedMethodAccessor3460.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.42 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/order/getUserOrders?uid=69&type=0',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 506,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 13,
+      'size_download' => 6065,
+      'speed_download' => 195645,
+      'speed_upload' => 419,
+      'download_content_length' => 6065,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62661,
+    ),
+  ),
+)
+2017-08-31 19:01:13=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => false,
+    'error' => 'Empty reply from server',
+    'code' => 0,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => NULL,
+      'http_code' => 0,
+      'header_size' => 0,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 200.422,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 31,
+      'size_download' => 0,
+      'speed_download' => 0,
+      'speed_upload' => 0,
+      'download_content_length' => -1,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 200.422,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 50215,
+    ),
+  ),
+)

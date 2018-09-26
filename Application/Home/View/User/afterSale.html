@@ -1,0 +1,70 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user-order.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar"/>
+        <div class="user-main user-comment clear">
+            <div id="com_goods" class="comment-goods">
+
+            </div>
+            <div class="comment-forms">
+                <div id="afterType" style="text-align: left">
+                    <span>服务类型：</span>
+                    <label style="margin-left: 15px" class="checkbox-2">
+                        <input id="salesReturn" typData="0" type="checkbox" class="private">
+                        <span style="position: relative;top:2px;" class="nisen-box-2"></span>
+                        <span>退货</span>
+                    </label>
+                    <label style="margin-left: 20px" class="checkbox-2">
+                        <input id="exchange" typData="1" type="checkbox" class="private">
+                        <span style="position: relative;top:2px;" class="nisen-box-2"></span>
+                        <span>换货</span>
+                    </label>
+                </div>
+                <div style="text-align: left;margin-top: 15px">
+                    <span>申请数量：</span>
+                    <div class="amount-group flex">
+                        <a class="amount-op minus" href="javascript:void(0)">-</a>
+                        <input id="gQuantity" type="number" class="amount-num" value="1">
+                        <a class="amount-op plus" href="javascript:void(0)">+</a>
+                    </div>
+
+                </div>
+                <div class="seReason" style="text-align: left;margin-top: 15px">
+                    <span>退换货原因：</span>
+                    <select id="SReason">
+                        <option value ="">请选择原因</option>
+
+                    </select>
+                </div>
+
+                <div style="margin-top: 30px" class="comment-text">
+                    <label for="commentText">问题描述：</label>
+                    <div class="text-wrapper">
+                        <textarea id="commentText" onkeyup="changeStatu()" maxlength="500"></textarea>
+                        <p>还可输入<span class="counter" id="spanNum">500</span>字</p>
+                    </div>
+                </div>
+                <div id="upimgBox" class="comment-images flex-start flex align-center">
+                    <input type="file" id="fileUpload"/>
+                    <label for="fileUpload" id="addpicBt" class="triggerFileInput"></label>
+                    <div id="imgInputbox"></div>
+                    <p id="addimgnoInf">共<span class="red-font" id="upingNo">0</span>张还能上传<span class="red-font" id="leftNo">5</span>张图片
+                    </p>
+
+                </div>
+                <button type="button" class="submit-comment">提交</button>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var sorderList = "{:U('User/orderList')}"
+    </script>
+    <script src="__JS__/afterSale.js"></script>
+</block>

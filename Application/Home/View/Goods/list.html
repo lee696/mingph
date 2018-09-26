@@ -1,0 +1,47 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar" />
+    <include file="Public:breadCrumb" />
+    <div class="main-width flex">
+        <div class="goods-list-side">
+            <div class="explore-history">
+                <h1>最近浏览商品</h1>
+                <div class="explore-list">
+                </div>
+                <a class="clear-explore">清除列表</a>
+            </div>
+            <div class="recommend-goods goods-ad-list">
+                <h1>精品推荐</h1>
+                <div id="recommend">
+
+                </div>
+            </div>
+        </div>
+        <div class="goods-list-main">
+            <div class="header">
+                <h4 id="po-tit"></h4>
+                <a href="javascript:void(0)" id="resetQuery">重置筛选条件</a>
+            </div>
+            <div class="goods-filter">
+                <span>排序方式：</span>
+                <a href="javascript:void(0)" class="goods-filter-options newest current isDown">最新</a>
+                <a href="javascript:void(0)" class="goods-filter-options price">价格</a>
+                <a href="javascript:void(0)" class="goods-filter-options saleNum">销量</a>
+            </div>
+            <div id='goods_list' class="goods-list-box flex flex-wrap flex-start align-center">
+            </div>
+            <div id="pageBar" class="pagination"></div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var defaultImg='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/goods.js?__T__"></script>
+    <script src="__JS__/goodsList.js?__T__"></script>
+
+</block>

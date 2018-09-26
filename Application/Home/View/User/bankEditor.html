@@ -1,0 +1,128 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar"/>
+        <div class="user-main user-bank-editor">
+            <h3 class="title dark-font">个人中心 > <a href="{:U('User/wallet')}">我的钱包</a> > <a href="{:U('User/bank')}">我的银行卡</a>
+                > 添加银行卡</h3>
+            <h3 class="title dark-font">请填写以下信息以添加银行卡</h3>
+            <form class="bank-editor-form">
+                <div class="inline-form flex flex-start align-center">
+                    <label>真实姓名</label>
+                    <input type="text" class="band-editor-form-item" id="userName" maxlength='20' required="true"
+                           validate="/[\u2E80-\u9FFF\w ]+$/i" msg="请正确填写持卡人真实姓名" placeholder="请输入持卡人真实姓名"/>
+                    <i class="check userName-warn hidden"></i>
+                </div>
+                <div class="inline-form flex flex-start align-center">
+                    <label>身份证号</label>
+                    <input type="text" class="band-editor-form-item" id="addidcard" maxlength='18' required="true"
+                           validate="idcard" msg="请正确填写身份证号" placeholder="请输入开卡人身份证号"/>
+                    <i class="check addidcard-warn hidden"></i>
+                </div>
+                <div class="inline-form cardNo_box flex flex-start align-center">
+                    <label>银行卡卡号</label>
+                    <input type="tel" class="band-editor-form-item card-num" id="addCardNo" maxlength='19'
+                           required="true" validate="/^(\d{16}|\d{19})$/" msg="请正确填银行卡号码"
+                           placeholder="输入卡号后会智能识别银行和卡种"/>
+                    <i class="check addCardNo-warn hidden"></i>
+                    <p class="card_name hidden"></p>
+                </div>
+                <div class="inline-form flex flex-start align-center">
+                    <label>手机号码</label>
+                    <input type="tel" class="band-editor-form-item" id="addPhone" maxlength='11' required="true"
+                           validate="phone" msg="请正确填写手机号码" placeholder="请填写您在银行预留的手机号码"/>
+                    <i class="check addPhone-warn hidden"></i>
+                </div>
+            </form>
+            <button type="button" class="submit-bank-card">提交</button>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            $('#addCardNo').blur(function () {
+                console.log(111);
+                var addCardNo = $('#addCardNo').val();
+                if (!addCardNo || addCardNo.match(/^(\d{16}|\d{19})$/) == null) {
+                    $(this).addClass('border_red')
+                    $('.addCardNo-warn').show().fadeOut('fast').fadeIn();
+
+                    return;
+                }
+                $(this).removeClass('border_red')
+                GetCardinf(addCardNo)
+            })
+
+            //提交新增银行卡
+            $('.submit-bank-card').click(function () {
+                var data = ykp.getFormData('.bank-editor-form', false);
+                var userName = $('#userName').val();
+                var addidcard = $('#addidcard').val();
+                var addCardNo = $('#addCardNo').val();
+                var addPhone = $('#addPhone').val();
+                if (!userName || userName.match(/[\u2E80-\u9FFF\w ]+$/i) == null) {
+                    $('.userName-warn').show().fadeOut('fast').fadeIn();
+                    return;
+                }
+                if (!addidcard || addidcard.match(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/) == null) {
+                    $('.userName-warn').hide();
+                    $('.addidcard-warn').show().fadeOut('fast').fadeIn();
+                    return;
+                }
+                if (!addCardNo || addCardNo.match(/^(\d{16}|\d{19})$/) == null) {
+                    $('.userName-warn').hide();
+                    $('.addidcard-warn').hide();
+                    $('.addCardNo-warn').show().fadeOut('fast').fadeIn();
+                    return;
+                }
+                if (!addPhone || addPhone.match(/(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/) == null) {
+                    $('.userName-warn').hide();
+                    $('.addidcard-warn').hide();
+                    $('.addCardNo-warn').hide();
+                    $('.addPhone-warn').show().fadeOut('fast').fadeIn();
+                    return;
+                }
+                $('.check').hide();
+                var uid = ykp.getLocalStorage("id");
+                var postData = {
+                    userId: uid,
+                    cardid: data.addCardNo,
+                    idCard: data.addidcard,
+                    cardholder: data.userName,
+                    telephone: data.addPhone
+                }
+                addCard(postData);
+            })
+
+            //获取银卡所属银行ajax函数
+            function GetCardinf(cardNo) {
+                ykp.doAjax({
+                    url: 'card/getCardName',
+                    method: 'get',
+                    data: {cardid: cardNo},
+                    success: function (res) {
+                        $('.bank-editor-form .cardNo_box .card_name').show().html(res.data);
+                    }
+                });
+            }
+
+            //添加银行卡ajax函数
+            function addCard(postData) {
+                ykp.doAjax({
+                    url: 'card/openCardBack',
+                    method: 'post',
+                    data: postData,
+                    success: function (res) {
+                        ykp.showOk({text: res.msg});
+                        location.href = document.referrer;
+                    }
+                });
+            }
+        })
+
+    </script>
+</block>

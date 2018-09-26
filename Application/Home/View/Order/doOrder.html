@@ -1,0 +1,159 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/address.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/order.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .foot{margin-top: 0;}
+    </style>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar"/>
+    <div class="order-page">
+        <div class="main-width ">
+            <div class="address-box order-section">
+                <h4>收货人信息</h4>
+                <div id="addressList" class="clear"></div>
+                <a href="javascript:void(0)" class="show-address-editor gold-font">使用新的收货地址</a>
+                <include file="Public:addressEditor"/>
+            </div>
+            <!-- <div class="pay-box order-section">
+                <h4>付款方式</h4>
+                <div class="online-pay">
+                    <h5>支持以下方式支付</h5>
+                    <div class="online-list clear">
+                   
+                        <label class="pay-option-box" pay-way="2">
+                            <i><img src="__IMG__/wechatpay.png" alt=""></i>
+                            <span class="">微信支付</span>
+                            <input type="radio" name="pay-option" class="pay-option"/>
+
+                        </label>
+
+                        <label class="pay-option-box" pay-way="1">
+                            <i><img src="__IMG__/zfpay.png" alt=""></i>
+                            <span class="">支付宝支付</span>
+                            <input type="radio" name="pay-option" class="pay-option"/>
+
+                        </label>
+
+                        <label class="pay-option-box" pay-way="0">
+                            <i style="top:9px;"><img src="__IMG__/yepay.png" alt=""></i>
+                            <span class="">余额支付</span>
+                            <input type="radio" name="pay-option" class="pay-option"/>
+
+                        </label>
+
+                        <label class="pay-option-box" pay-way="3">
+                            <i style="top:9px;"><img src="__IMG__/ylpay.png" alt=""></i>
+                            <span class="">银联卡</span>
+                            <input type="radio" name="pay-option" class="pay-option"/>
+
+                        </label>
+                    </div>
+                </div>
+               
+                <button class="confirm-pay-type">确认支付方式</button>
+            </div> -->
+            <div class="buy-box order-section">
+                <h4>商品清单 <a href="{:U('Order/cart')}" class="gold-font" id="backToShoppingCart">返回购物车修改</a></h4>
+                <table class="buy-box-table">
+                    <thead>
+                    <tr>
+                        <td>商品信息</td>
+                        <td>商品原价</td>
+                        <td>商品现价</td>
+                        <td>数量</td>
+                        <td>小计</td>
+                    </tr>
+                    </thead>
+                  
+                    <tbody id="buyList">
+                    <!-- <for start="1" end="5">
+                        <tr class="buylist-items">
+                            <td>
+                                <a href="#" class="img-wrapper">
+                                    <img src="__IMG__/test/1_22.png" />
+                                </a>
+                                <div class="buy-list-info">
+                                    <h5 class="buy-goods-name text-overflow">摩伊拉女夏季新款一字扣带性感粗跟凉鞋韩版时尚露趾百搭高跟鞋</h5>
+                                    <p class="buy-goods-params">颜色:  粉红色; 颜色:  粉红色</p>
+                                    <span class="red-font">个人定制</span>
+                                </div>
+                            </td>
+                            <td class="line-through">
+                                ￥184.00
+                            </td>
+                            <td class="bold-font">
+                                ￥184.00
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td class="red-font bold-font"> ￥184.00</td>
+                        </tr>
+                    </for>-->
+                    </tbody>
+                </table>
+            </div>
+            <div class="order-section order-discount">
+                <h4>折扣信息</h4>
+                <label class="checkbox">
+                    <input type="checkbox" class="useCoupon"/>
+                    <span class="nisen-box"></span>
+                    <span>使用优惠券</span>
+                </label>
+                <div id="useCoupon">
+                    <label class="gray-font">账号优惠券：
+                        <select id="coupons">
+                            <option value="">请选择优惠券</option>
+                        </select>
+                    </label>
+                    <button id="doUseCoupon">使用</button>
+                    <table class="coupons-table">
+                        <tr>
+                            <th>优惠券号码</th>
+                            <th>优惠券名称</th>
+                            <th>是否适用本订单</th>
+                            <th>删除</th>
+                        </tr>
+                    </table>
+                </div>
+                <label>
+                    <input type="checkbox" class="usePoint"/>
+                    <span class="nisen-box"></span>
+                    <span>使用积分抵扣</span>
+                </label>
+                <label class="user-message clear">
+                    <span>卖家留言：</span>
+                    <textarea id="userMessage" style="text-align:left"></textarea>
+                </label>
+            </div>
+            <div class="order-section submit-box clear">
+                <div class="discounted-box">
+                    <h2 class="bold-font gold-font sales-promotion">已享受的促销优惠：</h2>
+                    <p class="discount-write-in gold-font"></p>
+                </div>
+                <div class="count-info">
+                    <p>商品总金额：￥<span class="pri"></span></p>
+                    <p style="padding-left:16px;">商品运费：￥<span class="fre">0</span></p>
+                    <p>优惠券减免：-￥<span class="cdis">0</span></p>
+                    <p>积分抵扣额：-￥<span class="itg">0</span></p>
+                    <p class="red-font">应付金额：￥<span id="oderAmount" class="pay"></span></p>
+                </div>
+            </div>
+            <div class="order-section clear">
+                <button class="button" style="cursor: pointer;" id="submitOrder">立即提交</button>
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="js">
+    <script>
+        var success_page = "{:U('Order/success')}"
+    </script>
+    <script src="__JS__/distpicker.min.js"></script>
+    <script src="__JS__/address.js"></script>
+    <script src="__JS__/order.js"></script>
+    <script src="__JS__/doOrder.js"></script>
+</block>

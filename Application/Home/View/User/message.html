@@ -1,0 +1,31 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar" />
+        <div class="user-main">
+            <div class="user-message">
+                <h3 class="title dark-font">我的消息</h3>
+                <p class="hint">在这里可以查看系统消息，积分，余额，优惠券变动等消息通知</p>
+                <div class="user-message-render">
+
+                </div>
+                <div class="operations clear">
+                    <button type="button" class="user-wallet-records-action nextPage">下一页</button>
+                    <button type="button" class="user-wallet-records-action prePage">上一页</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+    </script>
+    <script src="__JS__/message.js?__T__"></script>
+</block>

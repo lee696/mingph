@@ -1,0 +1,89 @@
+.success-hint{
+    margin: 30px 0;
+}
+.success-order-info{
+    border: 1px solid #ddd;
+}
+.success-order-info>h3{
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    background-color: #fefaf4;
+}
+.success-order-info .wrapper{
+    padding: 16px 20px;
+}
+.success-order-info .wrapper>p{
+    margin-bottom: 16px;
+}
+.success-order-info .wrapper>p .gold-font{
+    text-decoration: underline;
+}
+.order-success-table{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.order-success-table th{
+    height: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.order-success-table td{
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+}
+.order-success-table td:nth-child(1), .order-success-table th:nth-child(1){width: 534px; text-align: left;}
+.order-success-table td:nth-child(2), .order-success-table th:nth-child(2){width: 145px; text-align: center;}
+.order-success-table td:nth-child(3), .order-success-table th:nth-child(3){width: 145px; text-align: left;}
+.order-success-table td:nth-child(4), .order-success-table th:nth-child(4){width: 103px; text-align: left;}
+.order-success-table td:nth-child(5), .order-success-table th:nth-child(5){width: 236px; text-align: left;}
+.order-success-table td:nth-child(1){
+    padding-left: 60px;
+}
+.order-success-table td:nth-child(1)>p{
+    width: 100%;
+}
+.order-success-table td:nth-child(1)>p:nth-of-type(2){font-size: 12px}
+.order-success-table td:nth-child(1)>span{
+    display: inline-block;
+    padding: 5px 8px;
+    border: #e94a52 1px solid;
+    color: #e94a52;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-top: 20px;
+    float: left;
+}
+.success-order-info .pay-page-entrance{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    background-color: #c5ad82;
+}
+.success-order-info .operation{
+    width: 100%;
+    margin-top: 16px;
+}
+
+.success-order-info .wrapper .pay-box{text-align: left}
+.success-order-info .wrapper .order-section{margin-bottom: 56px;}
+.success-order-info .wrapper .order-section h4{font-size: 18px;font-weight: 600; margin-bottom: 20px;}
+
+.success-order-info .wrapper .order-section .online-pay{margin: 0 0 20px;border: 1px solid #ddd;padding: 20px 28px;}
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option-box{cursor:pointer;float: left; display: block; width: 168px;height: 48px;margin-right: 10px;margin-top: 20px;border: 2px #f6f6f6 solid;position: relative;}
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option-box i{position: absolute;left:20px;top:7px;width: 30px;display:block;height: 30px;}
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option-box i img{display: block;width: 100%;height: 100%;}
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option-box span{position: absolute;top:14px;left: 58px}
+.success-order-info .wrapper .order-section .online-pay .online-list .checkedPayWay{  border-color: #c5ad82;  color:#c5ad82; }
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option-box:hover{  border-color: #c5ad82;  color:#c5ad82; }
+.success-order-info .wrapper .order-section .online-pay .online-list .pay-option{display: none;}
+.success-order-info .wrapper .order-section .confirm-pay-type{width: 150px;height: 34px;background-color: #c5ad82;color: white;font-size: 16px;border: #c5ad82 1px solid}
+
+
+
+
+

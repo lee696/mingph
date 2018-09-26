@@ -1,0 +1,39 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css" />
+</block>
+<block name="main">
+    <include file="Public:r-sidebar" />
+    <nav class="breadCrumb">
+        <div class="main-width">
+            <a href="{:U('Index/index')}">首页</a>
+            <span>></span>
+            <span>积分商城</span>
+        </div>
+    </nav>
+    <div class="main-width flex">
+        <div class="goods-list-main point-list">
+            <div class="header">
+                <h4>
+                    积分商城
+                </h4>
+            </div>
+            <div class="goods-filter">
+                排序方式：
+                <a href="javascript:void(0)" class="goods-filter-options newest current isDown">最新</a>
+                <a href="javascript:void(0)" class="goods-filter-options price">价格</a>
+                <a href="javascript:void(0)" class="goods-filter-options saleNum">销量</a>
+            </div>
+            <div id="points_list" class="goods-list-box flex justify-start flex-wrap">
+
+            </div>
+            <div id="pageBar" class="pagination"></div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+    </script>
+    <script src="__JS__/goods.js?__T__"></script>
+    <script src="__JS__/goodsintegralList.js?__T__"></script>
+</block>

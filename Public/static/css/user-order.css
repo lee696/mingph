@@ -1,0 +1,372 @@
+/**
+*  background-color: #f7f7f5;
+*/
+.user-order-list .user-info{
+    padding: 44px 38px;
+    background-color: #f7f7f5;
+    margin-bottom: 20px;
+}
+.user-order-list .user-info>img{
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.user-order-list .user-info .user-states{
+    margin-left: 38px;
+}
+.user-order-list .user-info .user-states>h1{font-size: 28px;}
+.user-order-list .user-info .user-states>span{
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 12px;
+    background-color: #c5ad82;
+    color: white;
+}
+.user-order-filter{
+    padding: 24px 38px 44px;
+    background-color: #f7f7f5;
+    margin-bottom: 10px;
+}
+.user-order-filter>h4{font-size: 18px;}
+.user-order-filter-option{
+    display: inline-block;
+    float: left;
+    margin-top: 24px;
+    margin-right: 22px;
+    width: 124px;
+    height: 50px;
+    border: 1px solid #ddd;
+    line-height: 50px;
+    text-align: center;
+}
+.user-order-filter-option.active{
+    border-color: #c5ad82;
+    background-color: #c5ad82;
+    color: white;
+}
+.user-order-filter-option:last-of-type{margin-right: 0;}
+
+.user-order-list-main{
+    padding: 33px 22px;
+    margin-bottom: 24px;
+    background-color: #f7f7f5;
+}
+.user-order-list-main .title-bar{margin-bottom: 32px}
+.user-order-list-main .cols{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.user-order-list-item .cols{padding-top: 22px; padding-bottom: 22px;}
+.user-order-list-main span.col-1{
+    padding-top: 0px;
+}
+.user-order-list-main .col-1{
+    width: 280px;
+    padding: 0 22px;
+    text-align: left;
+    padding-top: 14px;
+}
+.user-order-list-main .col-2{width: 102px;}
+.user-order-list-main .col-3{width: 128px;}
+.user-order-list-main .col-4{width: 136px;}
+.user-order-list-main .col-4 p{text-align: center;}
+.user-order-list-main .col-5{width: 112px;}
+.user-order-list-main .col-6{width: 120px;}
+.user-order-list-main .col-6 a{margin: 0 auto;}
+
+.user-order-list-item{
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.user-order-list-item>h5{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    color: #a5a5a5;
+    padding-left: 22px;
+    line-height: 4;
+}
+.user-order-list-item .main{background-color: white;}
+.user-order-list-item .img-wrapper, .user-order-list-item .more-img{
+    float: left;
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+.user-order-list-item .img-wrapper, .user-order-list-item .more-img>p{ text-align: center;}
+.user-order-list-item .img-wrapper>img{width: 100%; height: 100%; overflow: hidden}
+.user-order-list-item .more-img{
+    border: #c5ad82 1px solid;
+    color: #c5ad82;
+}
+.user-order-list-item .user-order-actions{
+    width: 80px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.user-order-list-item .user-order-actions.red{
+    border-color: #e94a52;
+    background-color: #e94a52;
+    color: white;
+}
+.user-order-list-item .user-order-actions + .user-order-actions{
+    margin-top: 14px;
+}
+
+.user-order-detail-section{
+    margin-bottom: 12px;
+    background-color: #f7f7f5;
+    padding: 48px 40px;
+    font-size: 18px;
+}
+.user-order-detail-section .title{font-weight: bold; margin-bottom: 26px;}
+.user-order-detail-section>p + p{
+    color: #808080;
+    margin-top: 14px;
+}
+.user-order-detail-section.order-info{position: relative;  }
+.user-order-detail-section.order-info .red-font{font-size: 22px;}
+.user-order-detail-section.order-info .operations{
+    position: absolute;
+    top: 50px;
+    right: 202px;
+}
+.user-order-detail-section.order-info .order-detail-action{
+    display: block;
+    width: 162px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #c5ad82;
+    border-radius: 3px;
+    border: 1px solid #c5ad82;
+    font-size: 18px;
+}
+.user-order-detail-section.order-info .order-detail-action + .order-detail-action{
+    margin-top: 20px;
+    border-color: #808080;
+    color: #808080;
+    background: none;
+}
+.user-order-detail-section .express-table{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #808080;
+    font-weight: normal;
+}
+#expressInfo tr{height:35px;}
+#expressInfo tr td{text-align: left;}
+.user-order-detail-section .express-table th:first-child, .user-order-detail-section .express-table td:first-child{
+    width: 280px;
+    text-align: left;
+    font-size: 18px;
+    color: #808080;
+    font-weight: normal;
+}
+.user-order-detail-section .express-table th:last-child, .user-order-detail-section .express-table td:last-child{
+    width: 560px;
+    text-align: left;
+    font-size: 18px;
+    color: #808080;
+    font-weight: normal;
+}
+.user-order-detail-section .items{
+    width: 100%;
+    height: 82px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.user-order-detail-section .items .img-wrapper{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    overflow:  hidden;
+}
+.user-order-detail-section .items .img-wrapper>img{
+    width: 100%;
+    height: 100%;
+}
+.user-order-detail-section .items .info{
+    margin-left: 12px;
+    width: auto;
+    height: 100%;
+}
+.user-order-detail-section .items .shouhou a:hover{color: #fff;}
+.user-order-detail-section .items .shouhou{position: absolute;top:27px;right: 28px;}
+.user-order-detail-section .items .info>h5{font-size: 14px;}
+.user-order-detail-section .items .info>p{font-size: 12px;}
+.user-order-detail-section .items .info>p>span{margin-right: 70px;}
+.user-order-detail-section .items .red-font{font-size: 14px;}
+
+.user-comment{
+    background-color: #f7f7f5;
+    margin-top: 26px;
+}
+.user-comment .comment-goods{
+    float: left;
+    width: 318px;
+    padding:58px 33px 0 33px;
+    text-align: center;
+}
+.user-comment .comment-forms{
+    float: right;
+    border-left: 2px solid #fff;
+    width: 610px;
+    padding-left: 40px;
+    padding-top: 53px;
+    padding-bottom: 50px;
+    text-align: left;
+
+}
+
+.user-comment .comment-forms .amount-group{
+    display: inline-block;
+    border: 1px #e8e8e8 solid;
+    width: 102px;
+    height: 30px;
+    position: relative;
+    margin-left: 14px;
+}
+.user-comment .comment-forms .amount-group .amount-op{
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    font-size: 21px;
+    line-height: 24px;
+}
+.user-comment .comment-forms .amount-group .minus{left: 0;}
+.user-comment .comment-forms .amount-group .plus{right: 0;}
+.user-comment .comment-forms .amount-group .amount-num{
+    width: 41px;
+    height: 29px;
+    top: 0;
+    border: 1px #e8e8e8 solid;
+    padding: 0;
+    text-align: center;
+
+}
+
+.user-comment .comment-forms .seReason select{height: 24px;}
+.user-comment .comment-goods .img-wrapper{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+.user-comment .comment-goods .img-wrapper>img{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.user-comment .comment-goods .goods-name{color: #808080;text-align: center;line-height: 25px;margin-top: 12px;}
+.user-comment .comment-goods .red-font{font-size: 16px;text-align: center;line-height: 37px;}
+
+.level-bar{display: inline-block;position: relative;top:3px;left: 7px;}
+.level-bar .icon-level{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    background: url('../images/star.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.level-bar .icon-level.checked{
+    background: url('../images/star-fill.png') no-repeat center center;
+    background-size: contain;
+}
+
+.user-comment .comment-forms .level{
+    width: 100%;
+    height: auto;
+}
+.user-comment .comment-forms .level>li{
+    float: left;
+    width: 230px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+.user-comment .comment-text{margin-top:62px;text-align: left;font-size: 14px;color:#1a191e;margin-bottom: 10px;}
+.user-comment .comment-text .commentText{
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+.user-comment .comment-text #commentText{
+    width: 100%;
+    height: 120px;
+    padding: 10px 20px;
+    margin-top: 7px;
+    text-align: left;
+    resize: none;
+}
+.user-comment .comment-text .text-wrapper{position: relative;width: 500px;}
+.user-comment .comment-text .text-wrapper p{position: absolute;right: 20px;bottom: 10px;font-size: 14px;color: #808080;}
+.user-comment .comment-text .commentText>p{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.user-comment #fileUpload{display: none}
+.user-comment .triggerFileInput{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url('../images/camera.png') no-repeat center center;
+    background-size: contain;
+    background-color: white;
+    margin-right: 14px;
+}
+.user-comment .comment-images .img-wrapper{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+.user-comment .comment-images .img-wrapper>img{width: 100%; height: 50px;display:block;}
+.user-comment .comment-images .remove-comment-images{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/remove-images.png") no-repeat center center;
+    background-size: 20px 20px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+.user-comment .comment-images .img-wrapper:hover .remove-comment-images{display: block}
+.user-comment .comment-images>p{color: #a5a5a5;margin-left: 10px;}
+.user-comment .comment-forms .hint{
+    font-size: 12px;
+    color: #c5ad82;
+    line-height: 2;
+}
+.user-comment .comment-forms .submit-comment{
+    margin: 20px 0 23px;
+    width: 180px;
+    height: 50px;
+    color: white;
+    background-color: #e94a52;
+    border: #e94a52 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+}

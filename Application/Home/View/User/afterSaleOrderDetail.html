@@ -1,0 +1,40 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user-order.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar"/>
+        <div class="user-main user-order-detail">
+            <div class="user-order-detail-section order-info">
+                <h3 class="title">订单详情</h3>
+                <p><span>订单状态：</span><span id="orderStatus"></span></p>
+                <p><span>订单编号：</span><span id="orderNo"></span></p>
+                <p><span>商品金额：</span><span id="goodsPri"></span></p>
+                <div class="operations">
+                    <a href="javascript:void(0)" class="order-detail-action clickActions"></a>
+                </div>
+            </div>
+            <div class="user-order-detail-section order-list">
+                <h3 class="title">商品信息</h3>
+                <div id="goodsList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Modal:cancelOrder"/>
+    <include file="Modal:delOrder"/>
+    <include file="Modal:confirmReceive"/>
+    <include file="Modal:cancelafterOrder"/>
+</block>
+<block name="js">
+    <script>
+        //商品详情
+        var shop_details = "{:U('Goods/detail')}";
+        var afterSaleurl = "{:U('User/afterSale')}";
+        var sorderlist="{:U('User/orderList')}";
+    </script>
+    <script src="__JS__/afterSaleOrderDetail.js?__T__"></script>
+</block>

@@ -1,0 +1,35 @@
+<extend name="Public:base" />
+<block name="css">
+  <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+  <div class="main-width user-center clear">
+    <include file="User:sidebar" />
+    <div class="user-main user-recharge">
+      <h3 class="title dark-font">个人中心 > <a href="{:U('User/wallet')}">我的钱包</a> > 帐户充值</h3>
+      <h3 class="title dark-font">帐户充值</h3>
+      <form class="user-recharge-form">
+        <div class="inline-form clear">
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;帐户余额：</span>
+          <span id="yue" class="red-font user-wallet-fund">0</span>
+          <span>元</span>
+        </div>
+        <div class="inline-form">
+          <label>
+            <span class="red-font">*</span>
+            转入金额：
+          </label>
+          <input id="mmoney" type="text" maxlength='15' placeholder="输入金额只允许保留两位小数！"/>
+          <!--<span style="font-size: 14px;color: red;float: left;margin-left: 156px;margin-top: 5px;">保留两位小数！</span>-->
+        </div>
+      </form>
+      <a id="confirmCharge" class="to-recharge-pay">确认转入</a>
+    </div>
+  </div>
+</block>
+<block name="js">
+  <script>
+      var srechargePay = "{:U('User/rechargePay')}";
+  </script>
+  <script src="__JS__/recharge.js?__T__"></script>
+</block>

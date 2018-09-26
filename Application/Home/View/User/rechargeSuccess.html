@@ -1,0 +1,29 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/pay.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="pay-success">
+        <div class="flex align-center justify-center title">
+            <i class="icon success-icon"></i>
+            <h1>账户充值成功</h1>
+        </div>
+        <div class="flex align-center justify-center">
+            <a class="gold-font go-order" href="">查看订单</a>
+            <a href="{:U('User/wallet')}" class="gold-font">返回我的钱包</a>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            //获取订单id
+            var orderId = $.getUrlParam('orderId');
+            if(orderId){
+                $('.go-order').attr('href',"{:U('User/orderDetail')}?orderId="+orderId);
+            }else{
+                $('.go-order').hide();
+            }
+        })
+    </script>
+</block>

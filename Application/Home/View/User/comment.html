@@ -1,0 +1,79 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user-order.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar"/>
+        <div class="user-main user-comment clear">
+            <div id="com_goods" class="comment-goods">
+
+            </div>
+            <div class="comment-forms">
+                <ul class="level clear">
+                    <li class="flex-start ">
+                        <span class="red-font">*</span>商品评价
+                        <span id="evaluate_goods" class="level-bar">
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                        </span>
+                    </li>
+                    <li class="flex-start">
+                        <span class="red-font">*</span>物流评价
+                        <span id="evaluate_logistics" class="level-bar">
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                        </span>
+                    </li>
+                    <li class="flex-start">
+                        <span class="red-font">*</span>描述相符
+                        <span id="evaluate_descriptions" class="level-bar">
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                            <i class="icon-level"></i>
+                        </span>
+                    </li>
+                </ul>
+                <div class="comment-text">
+                    <label for="commentText">请输入商品评论</label>
+                    <div class="text-wrapper">
+                        <textarea id="commentText" onkeyup="changeStatu()" maxlength="350"
+                                  placeholder="商品是否满意？快分享你的心得吧～"></textarea>
+                        <p>还可输入<span class="counter" id="spanNum">350</span>字</p>
+                    </div>
+                </div>
+                <div id="upimgBox" class="comment-images flex-start flex align-center">
+                    <input type="file" id="fileUpload"/>
+                    <label for="fileUpload" id="addpicBt" class="triggerFileInput"></label>
+                    <div id="imgInputbox"></div>
+                    <p id="addimgnoInf">共<span class="red-font" id="upingNo">0</span>张还能上传<span class="red-font"
+                                                                                                id="leftNo">5</span>张图片
+                    </p>
+
+                </div>
+                <button type="button" class="submit-comment">提交</button>
+                <p class="hint">评论说明:<br/>
+                    1、只能对在半年内购买的商品进行评价；<br/>
+                    2、同一订单的相同商品，只有一次评价获得积分；<br/>
+                    3、根据评论的质量和对广大网友的参考价值，赠送积分会有所不同；<br/>
+                    4、欢迎您发表有价值的评论，拷贝他人内容、内容重复、过多标点符号等情况不赠送积分。</p>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var sorderList="{:U('User/orderList')}";
+    </script>
+    <script src="__JS__/comment.js?__T__"></script>
+</block>

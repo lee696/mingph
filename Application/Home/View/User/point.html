@@ -1,0 +1,43 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar" />
+        <div class="user-main">
+            <div class="user-point">
+                <h4 class="title dark-font">我的积分</h4>
+                <p>您的积分为：<span id="integral-cont" class="red-font bold-font"></span></p>
+                <h4 class="title dark-font">积分明细</h4>
+                <div class="user-point-render">
+
+                </div>
+                <div class="operations">
+                    <button type="button" id="previous_page" class="point-record-action">上一页</button>
+                    <button type="button" id="next_page" class="point-record-action">下一页</button>
+                </div>
+            </div>
+            <div class="recommend-goods recommend_gs_items goods-ad-list">
+                <h1>精品推荐</h1>
+                <div id="recommend-goods" class="goods-list-box">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS__/banner.js?__T__"></script>
+    <script src="__JS__/goods.js?__T__"></script>
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+        var shop_details = "{:U('Goods/detail')}";
+        var defualtpic='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/point.js?__T__"></script>
+</block>

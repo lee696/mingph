@@ -1,0 +1,29 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/pay.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="pay-success">
+        <div class="flex align-center justify-center title">
+            <i class="icon success-icon"></i>
+            <h1>订单确认成功，等待卖家发货</h1>
+        </div>
+        <div class="flex align-center justify-center">
+            <a class="gold-font go-order" href="">查看订单</a>
+            <a href="{:U('Index/index')}" class="gold-font">继续购物</a>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            //获取订单id
+            var orderId = $.getUrlParam('orderId');
+            if(orderId){
+                $('.go-order').attr('href',"{:U('User/orderDetail')}?orderId="+orderId);
+            }else{
+                $('.go-order').hide();
+            }
+        })
+    </script>
+</block>

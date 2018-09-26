@@ -1,0 +1,788 @@
+2017-09-08 15:18:59=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/treasureTypeList</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/treasureTypeList</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 31,
+      'size_download' => 1044,
+      'speed_download' => 65250,
+      'speed_upload' => 1937,
+      'download_content_length' => 1044,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 61974,
+    ),
+  ),
+)
+2017-09-08 15:18:59=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/cart/getCartGoods</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/cart/getCartGoods</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/cart/getCartGoods?uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 489,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 6,
+      'size_download' => 1036,
+      'speed_download' => 64750,
+      'speed_upload' => 375,
+      'download_content_length' => 1036,
+      'upload_content_length' => 6,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 61976,
+    ),
+  ),
+)
+2017-09-08 15:18:59=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'gid' => '75',
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/integral/getIntegralGoodInfo</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/integral/getIntegralGoodInfo</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/integral/getIntegralGoodInfo?gid=75&uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 515,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 13,
+      'size_download' => 1058,
+      'speed_download' => 66125,
+      'speed_upload' => 812,
+      'download_content_length' => 1058,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 61977,
+    ),
+  ),
+)
+2017-09-08 15:18:59=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'pageNo' => '1',
+    'pageSize' => '4',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/fineRecommend</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/fineRecommend</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/fineRecommend?pageNo=1&pageSize=4',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 517,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 19,
+      'size_download' => 1038,
+      'speed_download' => 33483,
+      'speed_upload' => 612,
+      'download_content_length' => 1038,
+      'upload_content_length' => 19,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 61981,
+    ),
+  ),
+)
+2017-09-08 15:19:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/treasureTypeList</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/treasureTypeList</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 31,
+      'size_download' => 1044,
+      'speed_download' => 65250,
+      'speed_upload' => 1937,
+      'download_content_length' => 1044,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62005,
+    ),
+  ),
+)
+2017-09-08 15:19:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/cart/getCartGoods</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/cart/getCartGoods</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/cart/getCartGoods?uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 489,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.014999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0.014999999999999999,
+      'pretransfer_time' => 0.014999999999999999,
+      'size_upload' => 6,
+      'size_download' => 1036,
+      'speed_download' => 69066,
+      'speed_upload' => 400,
+      'download_content_length' => 1036,
+      'upload_content_length' => 6,
+      'starttransfer_time' => 0.014999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62007,
+    ),
+  ),
+)
+2017-09-08 15:19:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'gid' => '75',
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/integral/getIntegralGoodInfo</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/integral/getIntegralGoodInfo</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/integral/getIntegralGoodInfo?gid=75&uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 515,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 13,
+      'size_download' => 1058,
+      'speed_download' => 66125,
+      'speed_upload' => 812,
+      'download_content_length' => 1058,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62008,
+    ),
+  ),
+)
+2017-09-08 15:19:07=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'pageNo' => '1',
+    'pageSize' => '4',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/fineRecommend</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/fineRecommend</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/fineRecommend?pageNo=1&pageSize=4',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 517,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.014999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 19,
+      'size_download' => 1038,
+      'speed_download' => 69200,
+      'speed_upload' => 1266,
+      'download_content_length' => 1038,
+      'upload_content_length' => 19,
+      'starttransfer_time' => 0.014999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62010,
+    ),
+  ),
+)
+2017-09-08 15:19:11=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/treasureTypeList</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/treasureTypeList</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.014999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0.014999999999999999,
+      'pretransfer_time' => 0.014999999999999999,
+      'size_upload' => 31,
+      'size_download' => 1044,
+      'speed_download' => 69600,
+      'speed_upload' => 2066,
+      'download_content_length' => 1044,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 0.014999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62024,
+    ),
+  ),
+)
+2017-09-08 15:19:11=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/cart/getCartGoods</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/cart/getCartGoods</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/cart/getCartGoods?uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 489,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 6,
+      'size_download' => 1036,
+      'speed_download' => 64750,
+      'speed_upload' => 375,
+      'download_content_length' => 1036,
+      'upload_content_length' => 6,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62026,
+    ),
+  ),
+)
+2017-09-08 15:19:11=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'gid' => '75',
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/integral/getIntegralGoodInfo</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/integral/getIntegralGoodInfo</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/integral/getIntegralGoodInfo?gid=75&uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 515,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 13,
+      'size_download' => 1058,
+      'speed_download' => 66125,
+      'speed_upload' => 812,
+      'download_content_length' => 1058,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62027,
+    ),
+  ),
+)
+2017-09-08 15:19:11=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'pageNo' => '1',
+    'pageSize' => '4',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/fineRecommend</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/fineRecommend</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/fineRecommend?pageNo=1&pageSize=4',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 517,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 19,
+      'size_download' => 1038,
+      'speed_download' => 64875,
+      'speed_upload' => 1187,
+      'download_content_length' => 1038,
+      'upload_content_length' => 19,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62029,
+    ),
+  ),
+)
+2017-09-08 15:19:15=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'rows' => '20',
+    'pageNo' => '1',
+    'filter' => '',
+    'order' => '',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/treasureTypeList</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/treasureTypeList</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/treasureTypeList?rows=20&pageNo=1&filter=&order=',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 544,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 31,
+      'size_download' => 1044,
+      'speed_download' => 65250,
+      'speed_upload' => 1937,
+      'download_content_length' => 1044,
+      'upload_content_length' => 31,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62037,
+    ),
+  ),
+)
+2017-09-08 15:19:15=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/cart/getCartGoods</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/cart/getCartGoods</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/cart/getCartGoods?uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 489,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.031,
+      'namelookup_time' => 0,
+      'connect_time' => 0.014999999999999999,
+      'pretransfer_time' => 0.014999999999999999,
+      'size_upload' => 6,
+      'size_download' => 1036,
+      'speed_download' => 33419,
+      'speed_upload' => 193,
+      'download_content_length' => 1036,
+      'upload_content_length' => 6,
+      'starttransfer_time' => 0.031,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62039,
+    ),
+  ),
+)
+2017-09-08 15:19:15=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'gid' => '75',
+    'uid' => '69',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/integral/getIntegralGoodInfo</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/integral/getIntegralGoodInfo</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/integral/getIntegralGoodInfo?gid=75&uid=69',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 515,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.016,
+      'namelookup_time' => 0,
+      'connect_time' => 0.016,
+      'pretransfer_time' => 0.016,
+      'size_upload' => 13,
+      'size_download' => 1058,
+      'speed_download' => 66125,
+      'speed_upload' => 812,
+      'download_content_length' => 1058,
+      'upload_content_length' => 13,
+      'starttransfer_time' => 0.016,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62040,
+    ),
+  ),
+)
+2017-09-08 15:19:15=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'pageNo' => '1',
+    'pageSize' => '4',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.42 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 404 - /api/home/fineRecommend</h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u>/api/home/fineRecommend</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><hr class="line"><h3>Apache Tomcat/8.0.42</h3></body></html>',
+    'error' => '',
+    'code' => 404,
+    'curlinfo' => 
+    array (
+      'url' => 'http://120.25.237.198:8180/api/home/fineRecommend?pageNo=1&pageSize=4',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 404,
+      'header_size' => 173,
+      'request_size' => 517,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.047,
+      'namelookup_time' => 0,
+      'connect_time' => 0,
+      'pretransfer_time' => 0,
+      'size_upload' => 19,
+      'size_download' => 1038,
+      'speed_download' => 22085,
+      'speed_upload' => 404,
+      'download_content_length' => 1038,
+      'upload_content_length' => 19,
+      'starttransfer_time' => 0.047,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '120.25.237.198',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8180,
+      'local_ip' => '192.168.31.192',
+      'local_port' => 62042,
+    ),
+  ),
+)

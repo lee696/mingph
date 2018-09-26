@@ -1,0 +1,56 @@
+<extend name="Public:base" />
+<block name="main">
+    <div class="login-main relative-box">
+        <div class="login-main-box clear">
+            <div class="login-form">
+                <div class="form-box">
+                    <form class="loginForm accForm hidden">
+                        <h3>用户登录</h3>
+                        <p class="warning hidden"></p>
+                        <input type="text" name="phone" class="l-acc l-ele" id="accLoginPhone" maxlength='11' required="true" validate="phone" msg="请正确填写手机号码" placeholder="请输入手机号"/>
+                        <input type="password" name="password" class="l-pwd l-ele" maxlength='18' id="accLoginPwd"  required="true" validate="password" msg="请正确输入密码" placeholder="请输入密码"/>
+                        <div style="text-align: left; margin: 6px auto 0; width: 312px;">
+                            <label class="checkbox r-set">
+                                <input type="checkbox" class="l-remember" id="autoLogin" />
+                                <span class="nisen-box"></span>
+                                <span>保存登录信息</span>
+                            </label>
+                        </div>
+                    </form>
+                    <form class="loginForm msgForm">
+                        <h3>手机短信登录</h3>
+                        <p class="warning red-font hidden">请输入正确的手机号码</p>
+                        <input type="number" name="phone" class="l-phone l-ele" id="msgLoginPhone" maxlength='11' required="true" validate="phone" msg="请正确填写手机号码" placeholder="请输入手机号" />
+                        <div class="code-ico clear">
+                            <input type="text" name="icode" class="l-g-code l-ele" maxlength='6'  id="msgLoginCaptcha" required="true" validate="/^\w{4}$/i" msg="请正确填写图片验证码" placeholder="请输入图片验证码" />
+                            <div id="gCode"></div>
+                        </div>
+                        <div class="v-code clear">
+                            <input type="text" name="vcode" maxlength='6' class="l-code l-ele" id="msgLoginPhoneCaptcha" required="true" validate="/^[\d]+$/" msg="请正确填写验证码" placeholder="请输入验证码" />
+                            <button type="button" href="javascript:void(0);" class="l-get-code">获取验证码</button>
+                        </div>
+                    </form>
+                </div>
+                <button id="login_bt" type="button" class="login-btn">登录</button>
+                <nav>
+                    <div class="msg-log hidden"><a href="javascript:void(0)" id="msgForm" class="l-type ">使用手机短信登录</a></div>
+                    <div class="acc-log "><a href="javascript:void(0)" id="accForm" class="l-type">使用账号密码登录</a></div>
+                </nav>
+                <div class="row clear">
+                    <p>还不是会员？<a href="{:U('Member/register')}">免费注册</a></p>
+                    <a href="{:U('Member/findPwd')}" class="forget-entrance">忘记密码？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var gCodeCheck = false
+    </script>
+    <script src="__JS__/gVerify.js"></script>
+    <script src="__JS__/reg.js"></script>
+    <script src="__JS__/user.js"></script>
+    <script src="__JS__/login.js"></script>
+
+</block>

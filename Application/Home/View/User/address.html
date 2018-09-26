@@ -1,0 +1,78 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar"/>
+        <div class="user-main user-address">
+            <h3 id="addr-title" class="title dark-font" data-id="">新增收货地址</h3>
+            <form class="user-address-form clear">
+                <div class="inline-form flex-start flex align-center">
+                    <label>收货人姓名</label>
+                    <input type="text" class="user-address-form-item" required="true" maxlength='20'
+                           validate="/[\u2E80-\u9FFF\w ]+$/i" msg="请正确输入收货人姓名" placeholder="请输入收货人姓名" id="receiver"/>
+                </div>
+                <div class="inline-form flex-start flex align-center">
+                    <label>手机号码</label>
+                    <input type="tel" class="user-address-form-item" maxlength='11' required="true" validate="phone"
+                           msg="请正确填写手机号码" placeholder="请输入手机号" id="receiverPhone"/>
+                </div>
+                <div class="inline-form flex-start flex align-center">
+                    <label>省份</label>
+                    <div id="addressPicker" data-toggle="distpicker">
+                        <select id="provincePicker" data-province="省" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                                msg="请正确输入省份信息" class="address-form-item"></select>
+                        <select id="cityPicker" data-city="市" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                                msg="请正确输入城市信息" class="address-form-item"></select>
+                        <select id="regionPicker" data-district="区" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                                msg="请正确输入区信息" class="address-form-item"></select>
+                    </div>
+                </div>
+                <div class="inline-form flex-start flex align-center">
+                    <label>邮政编码</label>
+                    <input type="tel" maxlength='6' class="user-address-form-item" id="areaCode"/>
+                </div>
+                <div class="inline-form flex-start flex align-center">
+                    <label>地址</label>
+                    <textarea id="fullAddress" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i" msg="请正确输入详细地址信息"
+                              class="user-address-form-item"></textarea>
+                </div>
+
+            </form>
+            <div class="default-option">
+                <label class="checkbox-3">
+                    <input type="checkbox" id="isdefault"/>
+                    <span class="nisen-box-3"></span>
+                    <span>设为默认地址</span>
+                </label>
+            </div>
+            <button class="button" id="saveAddress">保存</button>
+            <div class="address-list">
+                <p>已保存<span id="saveAddressNo">0</span>条收货地址，还可以保存<span id="leftAddressNo">0</span>条地址</p>
+                <table class="address-list-table">
+                    <tr>
+                        <th>收货人</th>
+                        <th>地区</th>
+                        <th>详细信息</th>
+                        <th>邮编</th>
+                        <th>手机/电话</th>
+                        <th>操作</th>
+                    </tr>
+                    <tbody id="address-list-render">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+    </script>
+    <script src="__JS__/distpicker.min.js"></script>
+    <script src="__JS__/address.js"></script>
+
+</block>

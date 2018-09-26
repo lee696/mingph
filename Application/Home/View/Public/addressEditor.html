@@ -1,0 +1,55 @@
+<form class="address-form" style="display: none">
+    <div class="inline-form flex flex-start align-center">
+      <!-- <i class="form-check"></i> -->
+      <label>省：</label>
+      <span class="red-font">*</span>
+      <div id="addressPicker" data-toggle="distpicker">
+        <select id="provincePicker" data-province="请选择省" class="address-form-item" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                msg="请正确输入省份信息" ></select>
+        <span>市：</span>
+        <select id="cityPicker" data-city="请选择省" class="address-form-item" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                msg="请正确输入城市信息"></select>
+        <span>县：</span>
+        <select id="regionPicker" data-district="请选择区" class="address-form-item" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i"
+                msg="请正确输入区信息"></select>
+      </div>
+    </div>
+    <div class="inline-form flex flex-start align-center">
+        <!-- <i class="form-check failed"></i> -->
+        <label>邮政编码：</label>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="tel" id="areaCode"  maxlength='6'>
+        <span>（选填）</span>
+    </div>
+  <div class="inline-form flex flex-start align-center">
+    <!-- <i class="form-check"></i> -->
+    <label>街道地址：</label>
+    <span class="red-font">*</span>
+    <textarea id="fullAddress" style="text-align: left" required="true" validate="/[\u2E80-\u9FFF\w ]+$/i" msg="请正确输入详细地址信息"></textarea>
+  </div>
+  <div class="inline-form flex flex-start align-center">
+    <!-- <i class="form-check"></i> -->
+    <label>收货人姓名：</label>
+    <span class="red-font">*</span>
+    <input type="text" id="receiver" maxlength='20'
+           validate="/[\u2E80-\u9FFF\w ]+$/i" msg="请正确输入收货人姓名" placeholder="请输入收货人姓名">
+  </div>
+  <div class="inline-form flex flex-start align-center">
+    <!-- <i class="form-check"></i> -->
+    <label>手机号码：</label>
+    <span class="red-font">*</span>
+    <input type="tel" id="phone" maxlength='11' required="true" validate="phone"
+           msg="请正确填写手机号码" placeholder="请输入手机号">
+  </div>
+  <!--<div class="inline-form flex flex-start align-center">-->
+    <!--<i class="form-check"></i>-->
+    <!--<label>电话号码：</label>-->
+    <!--<span class="red-font">*</span>-->
+    <!--<input type="tel" id="telAreaCode">-->
+    <!--<span>-</span>-->
+    <!--<input type="tel" id="tel">-->
+    <!--<span>-</span>-->
+    <!--<input type="tel" id="telSubNo">-->
+  <!--</div>-->
+  <button type="button" style="cursor: pointer" id="saveAddress">确认地址</button>
+</form>

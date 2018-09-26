@@ -1,0 +1,73 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user-order.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/goods.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar"/>
+        <include file="User:sidebar"/>
+        <div class="user-main user-order-list">
+            <div class="user-info flex flex-start align-center">
+                <img id="headpic" src="__IMG__/avatar.png"/>
+                <div class="user-states">
+                    <h1 id="uName-dis">用户</h1>
+                    <span>普通加盟商</span>
+                </div>
+
+            </div>
+            <div class="user-order-filter clear">
+                <h4 class="bold-font">我的订单</h4>
+                <div id="list-type">
+                    <a href="javascript:void(0)" id="allOders"
+                       class="user-order-filter-option active">全部订单(<span>0</span>)</a>
+                    <a href="javascript:void(0)" id="wait-pay"
+                       class="user-order-filter-option">待付款订单(<span>0</span>)</a>
+                    <a href="javascript:void(0)" id="wait-Receive" class="user-order-filter-option">待收货订单(<span>0</span>)</a>
+                    <a href="javascript:void(0)" id="wait-evaluate"
+                       class="user-order-filter-option">待评价订单(<span>0</span>)</a>
+                    <a href="javascript:void(0)" id="wait-complete"
+                       class="user-order-filter-option">已完成订单(<span>0</span>)</a>
+                    <a href="javascript:void(0)" id="wait-afterSale"
+                       class="user-order-filter-option">售后订单(<span>0</span>)</a>
+                </div>
+            </div>
+            <div class="user-order-list-main">
+                <div class="title-bar">
+                    <span class="cols col-1">订单商品</span>
+                    <span id='sbuyer' class="cols col-2">收货人</span>
+                    <span id='orderprice' class="cols col-3">订单金额</span>
+                    <span class="cols col-4">下单时间</span>
+                    <span class="cols col-5">订单状态</span>
+                    <span class="cols col-6">操作</span>
+                </div>
+                <div id="order_list" class="user-order-list-render">
+                </div>
+                <div id="pageBar" class="pagination"></div>
+            </div>
+            <div class="recommend-goods recommend_gs_items goods-ad-list">
+                <h1>精品推荐</h1>
+
+                <div id="recommend" class="goods-list-box">
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Modal:cancelOrder"/>
+    <include file="Modal:cancelafterOrder"/>
+    <include file="Modal:delOrder"/>
+    <include file="Modal:confirmReceive"/>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+        var oSuccess="{:U('Order/success')}";
+        var toComment = "{:U('User/comment')}";
+        var shop_details = "{:U('Goods/detail')}";
+        var afterSaleOrderDetail = "{:U('User/afterSaleOrderDetail')}";
+        var defualtpic='__IMG__/no_picture.jpg';
+    </script>
+    <script src="__JS__/orderList.js?__T__"></script>
+</block>

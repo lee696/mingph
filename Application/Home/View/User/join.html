@@ -1,0 +1,54 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar" />
+    <div class="main-width join_us">
+        <div class="adver_box">
+            <img src="__IMG__/test/join2.png" />
+            <div class="join_info_box">
+                <div><a href="javascript:;" class="soonjoin">立即加盟</a></div>
+                <p>协助开通或咨询</p>
+                <p>客服电话：0755-72454545</p>
+            </div>
+        </div>
+        <div class="adver_box"><img src="__IMG__/test/join3.png" /></div>
+        <div class="adver_box"><img src="__IMG__/test/join4.png" /></div>
+        <div class="adver_box"><img src="__IMG__/test/join1.png" /></div>
+        <div class="join_bt"><a href="javascript:;" class="soonjoin">立即加盟</a></div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS__/distpicker.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            getJoininfo();//获取join状态
+
+            //获取join状态
+            function getJoininfo(){
+                ykp.doAjax({
+                    url:'common/checkJoinCondition',
+                    method:'get',
+                    data:{'uid':ykp.getLocalStorage('id')},
+                    success:function(res){
+                       var data = res.data;
+                        if(data.isJoin == 1){
+                            var jstates = ["待审核","审核通过", "审核不通过"];
+                            $('.soonjoin').html(jstates[data.state])
+                            $('.soonjoin').click(function(){
+                                location.href = '{:U("User/join-submit-readonly")}';
+                            });
+                        }else {
+                            $('.soonjoin').click(function(){
+                                location.href = '{:U("User/join-submit")}';
+                            });
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</block>
+

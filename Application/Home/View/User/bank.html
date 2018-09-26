@@ -1,0 +1,72 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar" />
+        <div class="user-main user-bank">
+            <h3 class="title dark-font">个人中心 > <a href="{:U('User/wallet')}">我的钱包</a> > 我的银行卡</h3>
+            <h3 class="title dark-font">我的银行卡</h3>
+            <div id="bank-card" class="flex flex-start align-center flex-wrap">
+
+                <a class="bank-editor-entrance" href="{:U('User/bankEditor')}">
+                    <h1>+</h1>
+                    <p>添加银行卡</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        //获取银行卡列表
+        getCard();
+        //获取银行卡列表
+        function getCard() {
+            var uid = ykp.getLocalStorage("id");
+            var postData = {
+                uid: uid,
+            };
+            ykp.doAjax({
+                url: 'card/getCarts',
+                method: 'get',
+                async: false,
+                data: postData,
+                success: function (res) {
+                    if (res.code !== 200) {
+                        ykp.alert(res.msg);
+                        return;
+                    }
+                    var data = res.data;
+                    var html = [];
+                    for (var i in data) {
+                        html.push(
+                                '<div class="bank-item">',
+                                '<div class="close_bt hidden"></div>',
+                                '<img src="' + data[i].icon + '" />',
+                                '<h3>中国工商银行<span>' + data[i].type + '</span></h3>',
+                                '<p>银行卡号：' + data[i].cardid + '</p>',
+                                '<p>银行预留手机：' + data[i].telephone + '</p>',
+                                '<p>用户名：' + data[i].name + '</p>',
+                                '<a class="red-font manage_card">管理</a>',
+                                '</div>'
+                                );
+                    }
+                    $('#bank-card').prepend(html.join(''));
+                }
+            });
+        }
+
+        $('#bank-card .manage_card').click(function () {
+            if($(this).parent().children('.close_bt').is(':hidden')){
+                $(this).parent().children('.close_bt').show();
+            }else {
+                $(this).parent().children('.close_bt').hide();
+            }
+
+        })
+
+
+    </script>
+</block>

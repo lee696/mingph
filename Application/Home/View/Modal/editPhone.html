@@ -1,0 +1,22 @@
+<div class="modal edit-phone-modal" id="editPhoneModal">
+  <div class="main">
+    <div class="header">
+      <a href="javascript:void(0)" class="close-modal"></a>
+    </div>
+    <div class="content">
+      <div class="inline-form flex flex-start align-center">
+        <label>手机号：</label>
+        <input type="tel"  id="editPhone" maxlength='11' required="true" validate="phone" msg="请正确填写手机号码" placeholder="请输入手机号"/>
+      </div>
+      <div class="inline-form flex flex-start align-center">
+        <label>验证码：</label>
+        <input type="text" maxlength='6' id="editPhoneCode" required="true" validate="/^[\d]+$/" msg="请正确填写验证码" placeholder="验证码" />
+        <button type="button" id="sendCpCode" class="send-edit-phone-code">发送验证码</button>
+      </div>
+      <div class="operations clear">
+        <button type="button" class="close-modal">取消</button>
+        <button type="button" id="submit-bin-phone" class="submit-edit-phone">确定</button>
+      </div>
+    </div>
+  </div>
+</div>

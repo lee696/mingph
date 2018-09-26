@@ -1,0 +1,28 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/help.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar" />
+    <div class="main-width help clear">
+        <nav class="help-sidebar">
+            <div class="sidebar-title">
+                <h3>帮助中心</h3>
+            </div>
+            <div class="module help-list"></div>
+        </nav>
+        <div class="help-main">
+            <div class="sidebar-title">
+                <h3>首页 > 帮助中心 > <span class="ttt"></span></h3>
+            </div>
+            <div class="content">
+                <h2 class="title"></h2>
+                <div class="desc"></div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS__/pagination.min.js?__T__"></script>
+    <script src="__JS__/help.js?__T__"></script>
+</block>

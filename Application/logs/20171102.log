@@ -1,0 +1,640 @@
+2017-11-02 01:01:49=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => '',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1122,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.11,
+      'namelookup_time' => 0,
+      'connect_time' => 0.047,
+      'pretransfer_time' => 0.047,
+      'size_upload' => 634,
+      'size_download' => 4183,
+      'speed_download' => 38027,
+      'speed_upload' => 5763,
+      'download_content_length' => 4183,
+      'upload_content_length' => 634,
+      'starttransfer_time' => 0.11,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 58872,
+    ),
+  ),
+)
+2017-11-02 01:02:00=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => '',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1122,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.092999999999999999,
+      'namelookup_time' => 0,
+      'connect_time' => 0.045999999999999999,
+      'pretransfer_time' => 0.045999999999999999,
+      'size_upload' => 634,
+      'size_download' => 4183,
+      'speed_download' => 44978,
+      'speed_upload' => 6817,
+      'download_content_length' => 4183,
+      'upload_content_length' => 634,
+      'starttransfer_time' => 0.092999999999999999,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 58892,
+    ),
+  ),
+)
+2017-11-02 01:03:26=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => '',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1122,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.125,
+      'namelookup_time' => 0,
+      'connect_time' => 0.063,
+      'pretransfer_time' => 0.063,
+      'size_upload' => 634,
+      'size_download' => 4183,
+      'speed_download' => 33464,
+      'speed_upload' => 5072,
+      'download_content_length' => 4183,
+      'upload_content_length' => 634,
+      'starttransfer_time' => 0.125,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 59037,
+    ),
+  ),
+)
+2017-11-02 01:03:27=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => '',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1122,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.094,
+      'namelookup_time' => 0,
+      'connect_time' => 0.047,
+      'pretransfer_time' => 0.047,
+      'size_upload' => 634,
+      'size_download' => 4183,
+      'speed_download' => 44500,
+      'speed_upload' => 6744,
+      'download_content_length' => 4183,
+      'upload_content_length' => 634,
+      'starttransfer_time' => 0.094,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 59053,
+    ),
+  ),
+)
+2017-11-02 01:03:36=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => 'http://my-mph.com/static/upload/1509555814969320.png',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1179,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.11,
+      'namelookup_time' => 0,
+      'connect_time' => 0.047,
+      'pretransfer_time' => 0.047,
+      'size_upload' => 691,
+      'size_download' => 4183,
+      'speed_download' => 38027,
+      'speed_upload' => 6281,
+      'download_content_length' => 4183,
+      'upload_content_length' => 691,
+      'starttransfer_time' => 0.11,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 59073,
+    ),
+  ),
+)
+2017-11-02 01:03:49=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'userId' => '54',
+    'merchantName' => 'dfgd',
+    'name' => 'fdgdfg',
+    'businessLicenseNum' => '546456546546546546',
+    'cause' => 'ghfghfg',
+    'yearIncome' => '453543',
+    'yearProfit' => '545245',
+    'idCard' => '544454454545434535',
+    'telephone' => '18545453543',
+    'bankName' => 'jjtjg',
+    'bankAccountName' => 'yuiyuiy',
+    'cardid' => '5454534534345345453',
+    'leagueLevel' => '1',
+    'area' => '河北省,唐山市,路南区',
+    'detailedAddress' => 'ytutyu',
+    'logo' => 'http://my-mph.com/static/upload/1509555652379739.jpeg',
+    'businessLicensePicture' => 'http://my-mph.com/static/upload/1509555814969320.png',
+    'bankCardPicture' => 'http://my-mph.com/static/upload/1509555660834518.jpeg,http://my-mph.com/static/upload/1509555707608337.png',
+    'vCode' => '555555',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - Request processing failed; nested exception is java.lang.NullPointerException</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>Request processing failed; nested exception is java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>root cause</b></p><pre>java.lang.NullPointerException
+	com.mph.controller.ShopController.joinChantApplication(ShopController.java:121)
+	sun.reflect.GeneratedMethodAccessor11717.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:111)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	com.mph.filter.CORSFilter.doFilter(CORSFilter.java:22)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.46 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 500,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/shop/joinChantApplication?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 500,
+      'header_size' => 415,
+      'request_size' => 1197,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.093999999999999972,
+      'namelookup_time' => 0,
+      'connect_time' => 0.047,
+      'pretransfer_time' => 0.047,
+      'size_upload' => 709,
+      'size_download' => 4183,
+      'speed_download' => 44500,
+      'speed_upload' => 7542,
+      'download_content_length' => 4183,
+      'upload_content_length' => 709,
+      'starttransfer_time' => 0.093999999999999972,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 59094,
+    ),
+  ),
+)
+2017-11-02 01:19:25=>array (
+  'file' => 'D:\\Visual-NMP-x64\\www\\program\\php\\mingph\\trunk\\Application\\Home\\Controller\\ApiController.class.php',
+  'line' => 65,
+  'class' => 'Home\\Controller\\ApiController',
+  'func' => 'proxy',
+  'msg' => 'API接口请求异常错误!',
+  'param' => 
+  array (
+    'id' => '54',
+    'headPortrait' => '',
+    'name' => '18926546903',
+    'sex' => '0',
+    'birthday' => 'NaN',
+  ),
+  'data' => 
+  array (
+    'result' => '<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.46 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 400 - </h1><div class="line"></div><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect.</u></p><hr class="line"><h3>Apache Tomcat/8.0.46</h3></body></html>',
+    'error' => '',
+    'code' => 400,
+    'curlinfo' => 
+    array (
+      'url' => 'http://139.199.171.25:8080/api/user/updateUser?',
+      'content_type' => 'text/html;charset=utf-8',
+      'http_code' => 400,
+      'header_size' => 405,
+      'request_size' => 554,
+      'filetime' => -1,
+      'ssl_verify_result' => 0,
+      'redirect_count' => 0,
+      'total_time' => 0.125,
+      'namelookup_time' => 0,
+      'connect_time' => 0.063,
+      'pretransfer_time' => 0.063,
+      'size_upload' => 77,
+      'size_download' => 1011,
+      'speed_download' => 8088,
+      'speed_upload' => 616,
+      'download_content_length' => 1011,
+      'upload_content_length' => 77,
+      'starttransfer_time' => 0.125,
+      'redirect_time' => 0,
+      'redirect_url' => '',
+      'primary_ip' => '139.199.171.25',
+      'certinfo' => 
+      array (
+      ),
+      'primary_port' => 8080,
+      'local_ip' => '192.168.1.104',
+      'local_port' => 60925,
+    ),
+  ),
+)

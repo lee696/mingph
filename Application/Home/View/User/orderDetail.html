@@ -1,0 +1,70 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user-order.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="User:sidebar"/>
+        <div class="user-main user-order-detail">
+            <div class="user-order-detail-section order-info">
+                <h3 class="title">订单详情</h3>
+                <p><span>订单状态：</span><span id="orderStatus"></span></p>
+                <p><span>订单编号：</span><span id="orderNo"></span></p>
+                <p><span>商品金额：</span><span id="goodsPri"></span></p>
+                <p><span>运费：</span><span id="transportationPri"></span></p>
+                <p><span>优惠券抵扣：</span><span id="couponPri"></span></p>
+                <p><span>积分抵扣：</span><span id="integralPri"></span></p>
+                <p><span>总付款：</span><span class="red-font bold-font" id="orderPri"></span></p>
+                <div class="operations">
+                    <a href="javascript:void(0)" class="order-detail-action clickActions"></a>
+
+                </div>
+            </div>
+            <div class="user-order-detail-section receiver-info">
+                <h3 class="title">收货信息</h3>
+                <p><span>收货人：</span><span id="receiver"></span></p>
+                <p><span>收货地址：</span><span id="recAddress"></span></p>
+                <p><span>手机号：</span><span id="telephone"></span></p>
+            </div>
+            <div class="user-order-detail-section pay-info">
+                <h3 class="title">配送方式及支付方式</h3>
+                <p><span>配送方式：</span><span>第三方物流</span></p>
+                <p><span>支付方式：</span><span id="pay_way"></span></p>
+            </div>
+            <div class="user-order-detail-section express-info">
+                <h3 class="title">物流信息</h3>
+                <p><span>快递公司：</span><span id="expressName"></span></p>
+                <p><span>物流单号：</span><span id="expressNo"></span></p>
+                <table class="express-table">
+                    <tr>
+                        <th>操作时间：</th>
+                        <th>&nbsp;&nbsp;操作信息：</th>
+                    </tr>
+                    <tbody id="expressInfo">
+                    </tbody>
+                </table>
+            </div>
+            <div class="user-order-detail-section order-list">
+                <h3 class="title">商品信息</h3>
+                <div id="goodsList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Modal:cancelOrder"/>
+    <include file="Modal:delOrder"/>
+    <include file="Modal:confirmReceive"/>
+</block>
+<block name="js">
+    <script>
+        //商品详情
+        var shop_details = "{:U('Goods/detail')}";
+        var afterSaleurl = "{:U('User/afterSale')}";
+        var oSuccess="{:U('Order/success')}";
+        var oComment = "{:U('User/comment')}";
+        var sOderlist = "{:U('User/orderList')}";
+    </script>
+    <script src="__JS__/orderDetail.js?__T__"></script>
+</block>

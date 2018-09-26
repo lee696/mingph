@@ -1,0 +1,45 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar" />
+        <div class="user-main user-pwd">
+            <h3 class="title dark-font">修改密码</h3>
+            <form class="user-pwd-form">
+                <div class="inline-form flex flex-start align-center">
+                    <label>手机号</label>
+                    <input type="text" name="phone" class="user-pwd-form-item" id="userPhone" maxlength='11' readonly="readonly" required="true" validate="phone" msg="请正确填写手机号码" placeholder="请输入手机号" />
+                    <span class="phone-warn warning"><div class="form-check hidden"></div></span>
+                </div>
+                <div class="inline-form flex flex-start align-center getVcode_box ">
+                    <label>验证码</label>
+                    <input type="text" class="l-code l-ele" maxlength='6' id="phoneVcode"  name="vCode" required="true" validate="/^[\d]+$/" msg="请正确填写验证码" placeholder="请输入验证码"  />
+                    <button type="button" class="getVcode">获取验证码</button>
+                    <span class="vcode-warn warning"><div class="form-check hidden"></div></span>
+                </div>
+                <div class="inline-form flex flex-start align-center">
+                    <label>新密码</label>
+                    <input type="password" class="user-pwd-form-item" id="pwd-inp1" name="password" maxlength='18' required="true" validate="password" msg="密码长度最少为6位,最多18位" placeholder="请输入密码" />
+                    <span class="password-warn warning"><div class="form-check hidden"></div></span>
+                </div>
+                <div class="inline-form flex flex-start align-center">
+                    <label>确认密码</label>
+                    <input type="password" class="user-pwd-form-item" id="pwd-inp2" name="password2" maxlength='18' required="true" validate="password" msg="密码长度最少为6位,最多18位" placeholder="确认密码" />
+                    <span class="password-warn2 warning"><div class="form-check ok hidden"></div></span>
+                </div>
+            </form>
+            <button id="subMod" style="cursor: pointer" type="button" class="submit-pwd">确定</button>
+        </div>
+    </div>
+    <include file="Modal:pwdCheck" />
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+    </script>
+    <script src="__JS__/pwd.js?__T__"></script>
+</block>

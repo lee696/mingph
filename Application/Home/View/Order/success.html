@@ -1,0 +1,115 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/success.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width">
+        <h3 class="success-hint">感谢您在本店购物，您的订单已提交成功!</h3>
+        <div class="success-order-info">
+            <h3 class="gold-font">订单信息</h3>
+            <div class="wrapper">
+                <p><span class="bold-font">订单编号：</span><span id="orderNo">没有数据</span></p>
+                <p><span class="bold-font">应付金额：</span><span id="payMy" class="red-font">没有数据</span></p>
+                <p id="seeDorder"><span class="bold-font">付款期限：
+            </span><span id="lastTime">没有数据</span>
+                    <span class="red-font">（请在24小时内完成支付，否则订单会自动取消）</span>
+                </p>
+                <!--  <table class="order-success-table">
+                      <tr>
+                          <th>商品信息</th>
+                          <th>商品原价</th>
+                          <th>商品现价</th>
+                          <th>数量</th>
+                          <th>小计</th>
+                      </tr>
+                      <for start="1" end="4">
+                          <tr>
+                              <td>
+                                  <p class="text-overflow">摩伊拉女夏季新款一字扣带性感粗跟凉鞋韩版时尚露趾百搭高跟鞋</p>
+                                  <p>尺寸:  36 尺寸:  36</p>
+                                  <span>个人定制</span>
+                              </td>
+                              <td class="line-through">
+                                  $10000
+                              </td>
+                              <td class="bold-font">
+                                  10000
+                              </td>
+                              <td class="bold-font">
+                                  1
+                              </td>
+                              <td class="red-font">
+                                  1
+                              </td>
+                          </tr>
+                      </for>
+                  </table>-->
+                <div class="pay-box order-section">
+                    <h4>付款方式</h4>
+                    <div class="online-pay">
+                        <h5>支持以下方式支付</h5>
+                        <div id="payTypebox" class="online-list clear">
+
+                            <label class="pay-option-box" pay-way="21">
+                                <i><img src="__IMG__/wechatpay.png" alt=""></i>
+                                <span class="">微信支付</span>
+                                <input type="radio" name="pay-option" class="pay-option"/>
+
+                            </label>
+
+                            <label class="pay-option-box" pay-way="11">
+                                <i><img src="__IMG__/zfpay.png" alt=""></i>
+                                <span class="">支付宝支付</span>
+                                <input type="radio" name="pay-option" class="pay-option"/>
+
+                            </label>
+
+                            <label class="pay-option-box" pay-way="0">
+                                <i style="top:9px;"><img src="__IMG__/yepay.png" alt=""></i>
+                                <span class="">余额支付</span>
+                                <input type="radio" name="pay-option" class="pay-option"/>
+
+                            </label>
+
+                            <label class="pay-option-box" pay-way="31">
+                                <i style="top:9px;"><img src="__IMG__/ylpay.png" alt=""></i>
+                                <span class="">银联卡</span>
+                                <input type="radio" name="pay-option" class="pay-option"/>
+
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <button class="confirm-pay-type">确认支付方式</button>-->
+                </div>
+
+                <div class="operation  clear">
+                    <!--<div class="block">
+                        <span class="bold-font">支付方式：</span>
+                        <span class="red-font">【网银-中国工商银行】</span>
+                    </div>-->
+                    <div style="float: right" class="block">
+                        <a id="immediatelyTopay" class="pay-page-entrance">
+                            下一步，立即去支付
+                        </a>
+                        <!-- <a class="red-font">
+                             【更换支付方式】
+                         </a>-->
+                    </div>
+                </div>
+                <div style="display:none;" class="tips">
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        //控制器跳转
+        var orderDetail = "{:U('User/orderDetail')}";
+        var typeOfwxPay = "{:U('Order/wxPay')}";
+        var typeOfqrPay = "{:U('Order/qrPay')}";
+        var typeOfwalletPay = "{:U('Order/walletPay')}";
+        var setPaypwd = "{:U('User/payPwd')}";
+    </script>
+    <script src="__JS__/payss.js?__T__"></script>
+</block>

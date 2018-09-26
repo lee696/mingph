@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="keywords">
+        <meta name="description" content="description">
+        <title>名品汇</title>
+        <load href="__JS__/jquery-3.2.1.min.js" />
+        <load href="__JS__/ykp.js" />
+        <load href="__JS__/jquery.qrcode.min.js" />
+        <load href="__JS__/jquery.tmpl.min.js" />
+        <load href="__JS__/tips.js" />
+        <load href="__JS__/base.js" />
+        <load href="__JS__/public.js" />
+        <load href="__JS__/JQuery.md5.js" />
+        <load href="__CSS__/global.css"/>
+        <load href="__CSS__/global-fix.css"/>
+        <block name="css"></block>
+</head>
+<body>
+<include file="Public:nav" />
+<block name="main"></block>
+<include file="Public:footer" />
+<div id="iewarningBox"></div>
+<div id="iewarningCont">
+    <div class="iewCont">
+        <a href="https://www.microsoft.com/zh-cn/download/internet-explorer.aspx" class="upieb">
+            <img  src="__IMG__/upie.png"  alt="">
+        </a>
+        <a href="http://www.google.cn/intl/zh-CN/chrome/business/browser/" class="upchromeb">
+            <img src="__IMG__/upchrome.png" alt="">
+        </a>
+    </div>
+</div>
+<script>
+    var goods_list_page = "{:U('Goods/list')}";
+    var goods_detail_page = "{:U('Goods/detail')}";
+    var goods_Integraldetail_page = "{:U('Goods/integralGoodsDetail')}";
+    var _index_page = "{:U('Index/index')}";
+    var _login_page = "{:U('Member/login')}";
+    var _register_page = "{:U('Member/register')}";
+    var _doOder ="{:U('Order/doOrder')}";
+    var _join ="{:U('User/join')}";
+</script>
+<script src="__JS__/search.js?__T__"></script>
+<script src="__JS__/iecheck.js?__T__"></script>
+<block name="js"></block>
+<script>
+    $(function () {
+        globalInit()
+    })
+</script>
+</body>
+</html>

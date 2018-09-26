@@ -1,0 +1,33 @@
+<extend name="Public:base" />
+<block name="css">
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar" />
+        <include file="User:sidebar" />
+        <div class="user-main user-collect">
+            <h3 class="title dark-font">我的收藏</h3>
+            <table class="collect-table">
+                <tr>
+                    <th>商品图片</th>
+                    <th>商品名称</th>
+                    <th>价格</th>
+                    <th>操作</th>
+                </tr>
+                <tbody id="collectRender">
+                </tbody>
+            </table>
+            <div class="operations">
+                <button type="button" id="prePage" class="collect-page-action">上一页</button>
+                <button type="button" id="nextPage" class="collect-page-action">下一页</button>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+    </script>
+    <script src="__JS__/collect.js?__T__"></script>
+</block>

@@ -1,0 +1,70 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/modal.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <include file="Public:r-sidebar"/>
+    <div class="main-width my_store clear">
+        <include file="User:sidebar"/>
+        <div class="store_cont">
+
+
+            <div class="store_info hidden">
+
+                <p id="store_type"></p>
+                <p id="nameInfor"></p>
+                <div class="shangj clear">
+                    <i><img id="confrm_ico" src=""/></i>
+                    <sapn id="confrm_user"></sapn>
+                    <i><img id="jLevel_ico" src=""/></i>
+                    <sapn id="jLevel"></sapn>
+                </div>
+                <div class="store_qr">
+                </div>
+                <div class="share_bt">分享我的店铺</div>
+            </div>
+
+            <div class="record clear hidden">
+                <div id="record-cobox">
+
+                </div>
+
+                <div class="page_change">
+                    <div class="previous_page">上一页</div>
+                    <div class="next_page">下一页</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="store-sharing hidden">
+            <div class="sharing-box">
+                <div class="close—ico clear">
+                    <i></i>
+                </div>
+                <p>分享到</p>
+                <div class="sharing-bt clear">
+                    <div id="wechat_sharing"><a href="" target="_blank"><img src="__IMG__/share-wx.png"/></a></div>
+                    <div id="qq_sharing"><a href="" target="_blank"><img src="__IMG__/share-qq.png"/></a></div>
+                    <div id="sina_sharing"><a href="" target="_blank"><img src="__IMG__/share-wb.png"/></a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS__/distpicker.min.js"></script>
+    <script>
+        var hasRz='__IMG__/pay-success.png';
+        var noRz='__IMG__/state-3.png';
+        var shasRz='__IMG__/state-1.png';
+        var snoRz='__IMG__/state-3.png';
+        var grUser ='__IMG__/state-4.png';
+        var ptJoin ='__IMG__/state-4.png';
+        var gjJoin ='__IMG__/state-2.png';
+    </script>
+    <script src="__JS__/store.js"></script>
+</block>

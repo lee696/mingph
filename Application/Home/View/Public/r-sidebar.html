@@ -1,0 +1,46 @@
+<div class="r-sidebar">
+    <div class="r-sidebarBox">
+        <div class="inBox">
+            <a href="/Index/index.html">
+                <div class="home_page">首页</div>
+            </a>
+            <a href="/User/orderList.html">
+                <div class="j-order"></div>
+            </a>
+            <a href="/Order/cart.html">
+                <div class="j-cart"></div>
+            </a>
+            <a href="/User/message.html">
+                <div class="msg"></div>
+            </a>
+            <a id="sCustmerclick">
+                <div class="serve"></div>
+            </a>
+            <a>
+                <div id="mTop_bt" class="move_top"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<block name="js">
+    <script>
+        //咨询客服
+        getcustomerService()
+        function getcustomerService() {
+            $('#sCustmerclick').click(function () {
+                var newTab=window.open('about:blank');
+                //获取客服QQ号
+                ykp.doAjax({
+                    url: 'default/getCustomerService',
+                    method: 'get',
+                    data: {},
+                    success: function (res) {
+                        var qqnum = res.data;
+                        newTab.location.href='http://wpa.qq.com/msgrd?V=1&uin='+ qqnum +'&Site=pageadmin&Menu=yes';
+                    }
+                });
+            })
+
+        }
+    </script>
+</block>

@@ -1,0 +1,56 @@
+<extend name="Public:base"/>
+<block name="css">
+    <link href="__CSS__/user.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="main">
+    <div class="main-width user-center clear">
+        <include file="Public:r-sidebar"/>
+        <include file="User:sidebar"/>
+        <div class="user-main">
+            <div class="user-wallet">
+                <h3 class="title dark-font">可用余额</h3>
+                <div class="flex space-between align-start">
+                    <div class="left">
+                        <h1 id="balance" class="red-font bold-font">￥0</h1>
+                        <a href="{:U('User/recharge')}" class="wallet-link">立即充值</a>
+                    </div>
+                    <div class="right">
+                        <p id="recharge">累计充值额：￥0</p>
+                        <p style="margin-bottom: 71px;" id="share">累计分润额：￥0</p>
+                        <!--<p id="cardSum">银行卡： <span>0</span> <a class="gold-font" href="{:U('User/bank')}">管理</a></p>-->
+                        <div class="setPassword hidden"><a href="{:U('User/payPwd')}" class=" wallet-link">设置支付密码</a>
+                        </div>
+                        <div class="changePassword hidden"><a href="{:U('User/payPwd')}?payPwdch=1"
+                                                              class=" wallet-link">修改支付密码</a></div>
+                        <div class="forgetPassword hidden"><a href="{:U('User/payPwd')}?payPwdfo=1"
+                                                              class=" wallet-link">忘记支付密码</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-wallet-records">
+                <h3 class="title dark-font">明细记录</h3>
+                <table>
+                    <tr>
+                        <td>交易日期</td>
+                        <td>交易类型</td>
+                        <td>金额（元）</td>
+                    </tr>
+                    <tbody id="userWalletRecords">
+
+                    </tbody>
+                </table>
+                <div class="operations">
+                    <button type="button" class="user-wallet-records-action prePage">上一页</button>
+                    <button type="button" class="user-wallet-records-action nextPage">下一页</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var orderDetail = "{:U('User/orderDetail')}";
+
+    </script>
+    <script src="__JS__/wallet.js?__T__"></script>
+</block>

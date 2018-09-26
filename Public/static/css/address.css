@@ -1,0 +1,122 @@
+.address-item{
+    float: left;
+    display: block;
+    padding: 8px 16px 16px;
+    width: 240px;
+    height: 160px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: url('../images/address.png') no-repeat center center;
+    background-size: contain;
+}
+.address-item.active{
+    background: url('../images/address-active.png') no-repeat center center;
+    background-size: contain;
+}
+.address-item .receiver{
+    font-size: 18px;
+    line-height: 1.8;
+    border-bottom: #ddd 1px solid;
+}
+#saveAddress{
+    width: 132px;
+    height: 36px;
+    background-color: #c5ad82;
+    border: #c5ad82 1px solid;
+    font-size: 16px;
+    float: left;
+    margin-left: 156px;
+    color: white;
+}
+.address-form{
+    width: 100%;
+    margin-top: 50px;
+}
+.address-form .inline-form{
+    width: 100%;
+    margin-bottom: 14px;
+}
+.address-form i.form-check{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/check.png') no-repeat center center;
+    background-size: contain;
+    line-height: 26px;
+}
+.address-form i.form-check.failed{
+    background: url('../images/check-fail.png') no-repeat center center;
+    background-size: contain;
+}
+.address-form label{
+    display: inline-block;
+    width: 110px;
+    height: 100%;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: right;
+}
+.address-form span.red-font{
+    display: inline-block;
+    line-height: 26px;
+    width: 26px;
+    height: 26px;
+}
+.address-form #addressPicker{
+}
+.address-form #addressPicker>span{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+}
+.address-form #provincePicker, .address-form #areaCode, .address-form #receiver{
+
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-form #cityPicker, .address-form #regionPicker{
+
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-form #fullAddress{
+
+    width: 940px;
+    height: 60px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-form #phone{
+
+    width: 210px;
+    height: 36px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-form #telAreaCode, .address-form #telSubNo{
+
+    width: 70px;
+    height: 36px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-form #tel{
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+    border: #ddd 1px solid;
+}
+.address-item .main{
+    color:#666666;
+} 
+#addressList #nAddress{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}

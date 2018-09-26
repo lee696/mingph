@@ -1,0 +1,45 @@
+<extend name="Public:base" />
+<block name="main">
+    <div class="register-main relative-box">
+        <div class="register-main-box clear">
+            <div class="register-form">
+                <div class="form-box">
+                    <form class="regForm accForm">
+                        <h3>用户注册</h3>
+                        <p class="warning register-warning" style="display:none"></p>
+                        <input type="number" class="l-phone l-ele" name="phone" maxlength='11' required="true" validate="phone" msg="请正确填写手机号码" placeholder="请输入手机号" />
+                        <div class="code-ico clear">
+                            <input type="text" class="l-g-code l-ele" maxlength='6' equal="" id="msgRegCaptcha" required="true" validate="equal" msg="请正确填写图片验证码" placeholder="请输入图片验证码"/>
+                            <div id="gCode"></div>
+                        </div>
+                        <div class="v-code clear">
+                            <input type="text" class="l-code l-ele" id="phoneVcode" name="vCode" required="true" validate="/^[\d]+$/" msg="请正确填写验证码" placeholder="请输入验证码"  />
+                            <button type="button" class="l-get-code">获取验证码</button>
+                        </div>
+                        <input type="password" class="l-pwd l-ele" name="password" maxlength='18' required="true" validate="password" msg="密码长度最少为8位,最多18位" placeholder="请输入密码" />
+                        <input type="password" class="l-pwdR l-ele" name="password2" maxlength='18' required="true" validate="password" msg="密码输入不一致" placeholder="请确认密码" />
+                        <div style="text-align: left; margin: 6px auto 0; width: 312px;">
+                            <label class="checkbox r-set">
+                                <input  type="checkbox" class="l-accept l-ele" id="acceptProtocol"/>
+                                <span class="nisen-box"></span>
+                                <span>我已看过并接受<a href="#" target="_blank">《名品汇用户协议》</a></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <button id="reg-btn" type="button" class="register-btn">免费注册</button>
+                <p>我有账号，直接<a href="{:U('Member/login')}">登录</a></p>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        var $warning_dom = $('.register-warning')
+        var gCodeCheck = false
+    </script>
+    <script src="__JS__/gVerify.js"></script>
+    <script src="__JS__/reg.js"></script>
+    <script src="__JS__/user.js"></script>
+    <script src="__JS__/register.js"></script>
+</block>
